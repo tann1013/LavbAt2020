@@ -54,7 +54,11 @@ lumenRoot/app/Http/Controllers/Admin/RbacController.php
         return $this->success([], '角色添加成功...');
     }
 
-二、其他
+
+二、中间件设计
+lumenRoot/app/Http/Middleware/RbacMiddleware.php
+
+三、其他
 2.1 数据库文件在docs/sql
 
 
