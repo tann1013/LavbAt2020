@@ -21,6 +21,7 @@ class InsideApi
      * @param $userinfoId
      * @param $message
      * @return array
+     * Eg. InsideApi::getInstance()->imSysNoticeMsg($userinfoId, "您好，您的店铺名称已更改为<b>{$shopName}</b>");
      */
     public function imSysNoticeMsg($userinfoId, $message)
     {
