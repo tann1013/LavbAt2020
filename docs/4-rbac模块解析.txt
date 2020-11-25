@@ -1,0 +1,62 @@
+//rbac模块解析
+
+一、分层设计
+1.1、M-模型层设计
+lumenRoot/app/Models/Rbac
+├── AdminPermission.php
+├── Permission.php
+├── Role.php
+├── RoleAdmin.php
+└── RolePermission.php
+
+1.1.1 Permission说明
+/**
+ * @var string 定义表名字
+ */
+protected $table = 'roles';
+/**
+ * 获得此角色下的用户
+ */
+public function admins(){
+    return $this->belongsToMany(Admin::class, 'role_admin', 'role_id', 'admin_id');
+}
+
+1.2、仓储层设计
+lumenRoot/app/Repositorys/RbacRepository.php
+
+1.3、服务层设计
+lumenRoot/app/Services/RbacService.php
+
+1.3.1 RbacService->createRole()
+    //添加角色信息
+    public function createRole(Request $request){
+        $data = $request->only(['name', 'display_name', 'description']);
+        return $this->rbacRepository->insertRole($data);
+    }
+
+1.4 控制器设计
+lumenRoot/app/Http/Controllers/Admin/RbacController.php
+1.4.1 方法举例
+    //添加角色信息
+    public function createRole(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'display_name' => 'required',
+            'description' => 'required',
+        ]);
+
+        $result = services()->rbacService->createRole($request);
+        if (!$result) {
+            return $this->fail('角色添加失败...');
+        }
+
+        return $this->success([], '角色添加成功...');
+    }
+
+二、其他
+2.1 数据库文件在docs/sql
+
+
+
+
