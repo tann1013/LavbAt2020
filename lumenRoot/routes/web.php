@@ -12,5 +12,6 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    //return $router->app->version();
+    return view('index', ['name' => '学院君']);
 });

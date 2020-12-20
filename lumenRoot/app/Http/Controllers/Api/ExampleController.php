@@ -69,6 +69,8 @@ class ExampleController extends CController
 
     public function test()
     {
+        //
+        var_dump(222);die;
 
     }
 }

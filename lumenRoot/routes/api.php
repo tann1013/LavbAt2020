@@ -12,7 +12,15 @@
 */
 
 $router->get('/', function () use ($router) {
+    //测试xdebug
+    echo 22;
+    for($i=0;$i<=100;$i++){
+        echo $i;
+    }
+
+
     return $router->app->version();
+
 });
 
 /**
