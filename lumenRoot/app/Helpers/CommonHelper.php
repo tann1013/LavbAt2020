@@ -6,10 +6,10 @@
  * Time: 下午3:16
  */
 
-//use App\Libraries\writelog\WriteLog;
-//use GuzzleHttp\Client;
-//use GuzzleHttp\Exception\ClientException;
-//use GuzzleHttp\Exception\RequestException;
+use App\Libraries\writelog\WriteLog;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * get_micro_time

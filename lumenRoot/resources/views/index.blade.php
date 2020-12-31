@@ -29,54 +29,54 @@
             <span class="sr-only">
               Toggle navigation
             </span>
-            <span class="icon-bar">
+            <span class="icon-bmenu_linkar">
             </span>
             <span class="icon-bar">
             </span>
             <span class="icon-bar">
             </span>
             </button>
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img src="assets/img/logo.png" class="logo"/>
             </a>
         </div>
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav header-menu">
                 <li>
-                    <a href="index.html">
+                    <a href="/">
                         首页
                     </a>
                 </li>
                 <li>
-                    <a href="about.html">
+                    <a href="about">
                         关于
                     </a>
                 </li>
-                <li>
-                    <a href="blog.html">
-                        博客
-                    </a>
-                </li>
-                <li>
-                    <a href="works.html">
-                        作品
-                    </a>
-                </li>
-                <li>
-                    <a href="links.html">
-                        链接
-                    </a>
-                </li>
-                <li>
-                    <a href="contact.html">
-                        联系
-                    </a>
-                </li>
-                <li>
-                    <a href="help.html">
-                        帮助
-                    </a>
-                </li>
+                {{--<li>--}}
+                    {{--<a href="blog.html">--}}
+                        {{--博客--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="works.html">--}}
+                        {{--作品--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="links.html">--}}
+                        {{--链接--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="contact.html">--}}
+                        {{--联系--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="help.html">--}}
+                        {{--帮助--}}
+                    {{--</a>--}}
+                {{--</li>--}}
             </ul>
         </div>
     </div>
@@ -128,7 +128,7 @@
     <div class="row">
         <div class="col-md-12 post-container">
             <h2 class="post-title">
-                <a href="content.html" title="">异步测试文章</a>
+                <a href="content" title="">异步测试文章</a>
             </h2>
             <div class="meta-box">
             <span class="m-post-date">
@@ -147,9 +147,6 @@
             <div class="post-content">
                 <p>
                     如果您在使用中遇到什么麻烦的事情,那么baby千万不要捶胸顿足,在友情链接界面您会看到作者的博客链接，您可以通过访问作者的博客留言联系我
-                    <a href="http://www.ybsat.com">
-                        联系我
-                    </a>
                     </p>
             </div>
             <div class="meta-box">
@@ -179,7 +176,7 @@
     <div class="row">
         <div class="col-md-12 post-container">
             <h2 class="post-title">
-                <a href="content.html" title="">异步测试文章</a>
+                <a href="content" title="">异步测试文章</a>
             </h2>
             <div class="meta-box">
             <span class="m-post-date">
@@ -276,9 +273,8 @@
     <footer>
         <!--版权信息-->
         <div class="copyright">
-            Copyright Ybsat ©2016 All rights reserved <a href="http://www.mycodes.net/" target="_blank">源码之家</a>&nbsp;&nbsp;
-            <a href="www.ybsat.com">
-                Theme leaves by Ybsat
+            谭建的家 tann1013@hotmail.com  © 2020
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=100" target="_blank">浙ICP备2020043071号</a>
             </a>
         </div>
     </footer>
