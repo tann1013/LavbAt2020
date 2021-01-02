@@ -186,7 +186,7 @@
     <footer>
         <!--版权信息-->
         <div class="copyright">
-            谭建的家 tann1013@hotmail.com  © 2020
+            蜗牛工作室  © 2020
             <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=100" target="_blank">浙ICP备2020043071号</a>
             </a>
         </div>

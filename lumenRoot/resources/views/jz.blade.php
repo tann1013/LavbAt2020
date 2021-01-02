@@ -14,7 +14,7 @@ $config = array(
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" id="viewport" />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <title><?php echo $config['name']?></title>
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
     <style type="text/css">
 
         .banner {height:100px;width:100%;color: red;background: mediumslateblue;font-size:30px;}
@@ -120,7 +120,7 @@ $config = array(
         //    op_today_running = 60;
 
         if(op_eat != '' && op_traffic != '' && op_today_profit != '' && addtime!= '' && op_today_reading != '' && op_today_running != '' ){
-            $.post('/index.php?r=site/jz',{
+            $.post('/admin/jz',{
                 'addtime':addtime,
                 'op_eat':op_eat,
                 'op_traffic':op_traffic,
@@ -144,8 +144,5 @@ $config = array(
         }else{
             $('#message').html('时间、吃饭、交通、每日收益,读书,跑步必须有值！');
         }
-
-
     });
-
 </script>

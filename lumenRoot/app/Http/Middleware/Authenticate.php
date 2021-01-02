@@ -24,6 +24,7 @@ class Authenticate
     protected $adminGuardArr = [
         'admin/auth/login',
         'admin/auth/logout',
+        'admin/jz',
     ];
 
     /**
