@@ -1,2 +1,37 @@
 
 ####LumenAdminVueBasicAt2020
+
+--------- 部署上线遇到的问题 ---------
+1、访问如下URL出现找不到对象
+http://www.17logs.com/about
+
+找不到对象！
+您请求的 URL 在该服务器上未找到。 您的来源页面上的链接可能出错或过期。 请将错误通知给该页面的作者。
+如果您认为这是一个服务器错误，请联系网站管理员。
+Error 404
+www.17logs.com
+Apache/2.4.46 (Unix) OpenSSL/1.1.1h PHP/7.4.13 mod_perl/2.0.11 Perl/v5.32.0
+
+解决方案
+public下新建.htaccess文件
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options +FollowSymLinks
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>
+

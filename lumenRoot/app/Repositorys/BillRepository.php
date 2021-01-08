@@ -36,7 +36,7 @@ class BillRepository
 
             $result->op_today_profit = $data['op_today_profit'];
             $result->op_today_reading = $data['op_today_profit'];
-            $result->op_today_running = $data['op_today_profit'];
+            $result->every_month_wages = $data['every_month_wages'];//工资
 
             return $result->save();
         } catch (\Exception $e) {

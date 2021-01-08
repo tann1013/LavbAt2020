@@ -1,7 +1,8 @@
 <?php
 $config = array(
-    'version'=>'3.1',
-    'name'   => 'TallyBook-V3.1'
+    'version'=>'3.2',
+    'name'   => 'TallyBook-V3.1',
+    'desc' => '补充工资收入',
 );
 ?>
 <html>
@@ -34,45 +35,48 @@ $config = array(
 <div id="message" style=""></div>
 <div class="form_zone" style="height:300px;width:100%;">
     <div class="cell">
-        <div class="title">0.时间</div>
+        <div class="title">今日时间</div>
         <div class="content"><input type="text" class="input" name="addtime" value="<?php echo date('Y-m-d',time())?>"/></div>
     </div>
     <div class="cell">
-        <div class="title">1.吃饭</div>
+        <div class="title">①吃饭</div>
         <div class="content"><input type="text" class="input" name="op_eat" /></div>
     </div>
     <div class="cell">
-        <div class="title">2.交通</div>
+        <div class="title">②交通</div>
         <div class="content"><input type="text" class="input" name="op_traffic"/></div>
     </div>
     <div class="cell">
-        <div class="title">3.其他</div>
+        <div class="title">③其他</div>
         <div class="content"><input type="text" class="input" name="op_other"/></div>
     </div>
     <div class="cell">
-        <div class="title">4.备注</div>
+        <div class="title">④其他备注</div>
         <div class="content">
             <input type="text" class="input" name="op_other_notes"  placeholder="其他的备注" />
         </div>
     </div>
     <div class="cell">
-        <div class="title">0.总计</div>
+        <div class="title">今日总支出</div>
         <div class="content"><input type="text" class="input" name="total" style="color: red"/></div>
     </div>
     <hr style="background: dodgerblue;height: 10px";>
     <div class="cell">
-        <div class="title">11.收益/元</div>
+        <div class="title">①理财收益/￥</div>
         <div class="content"><input type="text" class="input" name="op_today_profit"/></div>
     </div>
     <div class="cell">
-        <div class="title">12.读书/min</div>
+        <div class="title">②读书/min</div>
         <div class="content"><input type="text" class="input" name="op_today_reading"/></div>
     </div>
     <div class="cell">
-        <div class="title">13.跑步/min</div>
+        <div class="title">③跑步/min</div>
         <div class="content"><input type="text" class="input" name="op_today_running"/></div>
     </div>
-
+    <div class="cell">
+        <div class="title">④工资收入/￥</div>
+        <div class="content"><input type="text" class="input" name="every_month_wages" placeholder="发工资再填写"/></div>
+    </div>
     <div class="cell">
         <div class="title"><button style="height: 50px;font-size:30px;color:white;width: 100%;background: steelblue">历史</button></div>
         <div class="content"><input type="submit" value="提交当天数据" style="height: 50px;font-size:30px;color:white;width: 100%;color: black;background: cornflowerblue"></div>
@@ -95,6 +99,7 @@ $config = array(
         var op_today_reading = $('.form_zone input[name=op_today_reading]').val();
         var op_today_running = $('.form_zone input[name=op_today_running]').val();
         var op_other_notes   = $('.form_zone input[name=op_other_notes]').val();
+        var every_month_wages = $('.form_zone input[name=every_month_wages]').val();//补充工资收入
 
         //计算total
         var total =  parseInt(op_eat)+parseInt(op_traffic)+parseInt(op_other);
@@ -129,7 +134,8 @@ $config = array(
                 'total':total,
                 'op_today_profit':op_today_profit,
                 'op_today_reading':op_today_reading,
-                'op_today_running':op_today_running
+                'op_today_running':op_today_running,
+                'every_month_wages':every_month_wages
             },function(data){
                 if(data.code = '200'){
                     $('#message').html(data.msg);
