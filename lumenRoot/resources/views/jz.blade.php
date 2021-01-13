@@ -35,7 +35,7 @@ $config = array(
 <div id="message" style=""></div>
 <div class="form_zone" style="height:300px;width:100%;">
     <div class="cell">
-        <div class="title">今日时间</div>
+        <div class="title">日期</div>
         <div class="content"><input type="text" class="input" name="addtime" value="<?php echo date('Y-m-d',time())?>"/></div>
     </div>
     <div class="cell">
@@ -57,12 +57,12 @@ $config = array(
         </div>
     </div>
     <div class="cell">
-        <div class="title">今日总支出</div>
+        <div class="title">支出</div>
         <div class="content"><input type="text" class="input" name="total" style="color: red"/></div>
     </div>
     <hr style="background: dodgerblue;height: 10px";>
     <div class="cell">
-        <div class="title">①理财收益/￥</div>
+        <div class="title">①收益/￥</div>
         <div class="content"><input type="text" class="input" name="op_today_profit"/></div>
     </div>
     <div class="cell">
@@ -70,11 +70,11 @@ $config = array(
         <div class="content"><input type="text" class="input" name="op_today_reading"/></div>
     </div>
     <div class="cell">
-        <div class="title">③跑步/min</div>
+        <div class="title">③跑步/km</div>
         <div class="content"><input type="text" class="input" name="op_today_running"/></div>
     </div>
     <div class="cell">
-        <div class="title">④工资收入/￥</div>
+        <div class="title">④工资/￥</div>
         <div class="content"><input type="text" class="input" name="every_month_wages" placeholder="发工资再填写"/></div>
     </div>
     <div class="cell">
