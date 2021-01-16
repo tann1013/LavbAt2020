@@ -35,3 +35,5 @@ public下新建.htaccess文件
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
 
+
+

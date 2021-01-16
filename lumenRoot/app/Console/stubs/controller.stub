@@ -1,0 +1,195 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * @author tann1013@hotmail.com
+ * @date 2020-12-01
+ * @version 1.0
+ */
+
+namespace App\Http\Controllers\ApiWeb\Other;
+
+
+use App\DBs\House\StandardTechDb;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+
+class StandardTechController extends BaseController
+{
+    const NO_DATA_ERR_CODE = -1113;//查询不到相关信息
+    const CHECK_INPUTS_ERR_CODE = -1;//参数校验错误
+
+    protected  $db;
+    protected  $limit = 11;
+
+    /**
+     * StandardTechController constructor.
+     * @param StandardTechDb $standardTech
+     */
+    public function __construct(StandardTechDb $db)
+    {
+        parent::__construct();
+        $this->db = $db;
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function getList(Request $request){
+        //1 getInputs
+        $page = $request->input('page','0');//页
+        $size = $request->input('size',$this->limit);//条数
+        $uid = $this->checkSumBuilder($request);
+        if($uid<0){
+            //return $this->toWebJson($uid);
+        }
+        //2 logic
+        $where = array();
+        $data = $this->db->_getList($where, $page, $size);
+        $count =  $this->db->_count($where);
+        //3 response
+        if(empty($data) ){
+            return $this->toWebJson(-3);
+        }
+
+        //3.1 判断是否有子集
+        $this->_transformDta($data);
+        return $this->toWebJson(0,$data,$count);
+    }
+
+    /**
+     * @param Request $request
+     */
+    public function add(Request $request){
+        //1 getInputs
+        $inputs['parent_id'] = !empty($request->input('parent_id')) ? $request->input('parent_id'): '';
+        $inputs['title'] = !empty($request->input('title')) ? $request->input('title'): '';
+        $inputs['des'] = !empty($request->input('des')) ? $request->input('des'): '';
+        $inputs['created_at'] =  date('Y-m-d', time());
+        $validator = Validator::make($request->all(), [
+            'parent_id'  => 'required|numeric',
+            'title'  => 'required',
+        ], [
+            'parent_id.*'  => '字段缺失',
+            'title.*'  => '字段缺失',
+        ]);
+        if ($validator->fails()) {
+            return array('code'=>self::CHECK_INPUTS_ERR_CODE, 'msg'=> $validator->errors()->first());
+        }
+        //2 logic
+        if (!($getId = $this->db->_save($inputs))) {
+            return $this->toWebJson(-3);
+        }
+        //3 response
+        return $this->toWebJson(0, [$getId]);
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function modify(Request $request){
+        //1 getInputs
+        $id = !empty($request->input('id')) ? $request->input('id'): '';
+        $toUpdate['title'] = !empty($request->input('title')) ? $request->input('title'): '';
+        $toUpdate['des'] = !empty($request->input('des')) ? $request->input('des'): '';
+        $validator = Validator::make($request->all(), [
+            'id'  => 'required|numeric',
+            'title'  => 'required',
+        ], [
+            'id.*'  => '字段缺失',
+            'title.*'  => '字段缺失',
+        ]);
+        if ($validator->fails()) {
+            return array('code'=>self::CHECK_INPUTS_ERR_CODE,'msg'=> $validator->errors()->first());
+        }
+        //2 logic
+        $detail = $this->db->_getDetail($id);
+        if(!$detail){
+            return $this->toWebJson(self::NO_DATA_ERR_CODE);
+        }
+        if (!($res = $this->db->_update($id, $toUpdate))) {
+            return $this->toWebJson(-3);
+        }
+        //3 response
+        return $this->toWebJson(0);
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function del(Request $request){
+        //1 getInputs
+        $id = !empty($request->input('id')) ? $request->input('id'): '';
+        $validator = Validator::make($request->all(), [
+            'id'  => 'required|numeric',
+        ], [
+            'id.*'  => '字段缺失',
+        ]);
+        if ($validator->fails()) {
+            return array('code'=>self::CHECK_INPUTS_ERR_CODE,'msg'=> $validator->errors()->first());
+        }
+        //2 logic
+        $detail = $this->db->_getDetail($id);
+        if(!$detail){
+            return $this->toWebJson(self::NO_DATA_ERR_CODE);
+        }
+        if (!($res = $this->db->_del($id))) {
+            return $this->toWebJson(-3);
+        }
+        //3 response
+        return $this->toWebJson(0);
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function getChildren(Request $request){
+        //1 getInputs
+        $id = !empty($request->input('id')) ? $request->input('id'): '';
+        $page = $request->input('page','0');//页
+        $size = $request->input('size',$this->limit);//条数
+
+        $validator = Validator::make($request->all(), [
+            'id'  => 'required',
+        ], [
+            'id.*'  => '字段缺失',
+        ]);
+        if ($validator->fails()) {
+            return array('code'=>self::CHECK_INPUTS_ERR_CODE,'msg'=> $validator->errors()->first());
+        }
+        //2 logic
+        $detail = $this->db->_getDetail($id);
+        if(!$detail){
+            return $this->toWebJson(self::NO_DATA_ERR_CODE);
+        }
+        $where = array();
+        $where['parent_id'] = $id;
+        $data = $this->db->_getList($where, $page, $size);
+        $count =  $this->db->_count($where);
+        //3 response
+        if(empty($data) ){
+            return $this->toWebJson(-3);
+        }
+        //3.1 判断是否有子集
+        $this->_transformDta($data);
+
+        return $this->toWebJson(0,$data,$count);
+    }
+
+    /**
+     * @param $data
+     */
+    private function _transformDta(& $data){
+        //是否有子集
+        if($data){
+            foreach ($data as $item){
+                //判断是否有子数据
+                $cnt = $this->db->_count(['parent_id' => $item->id]);
+                $item->isChildren = $cnt>0 ? true : false;
+            }
+        }
+    }
+}

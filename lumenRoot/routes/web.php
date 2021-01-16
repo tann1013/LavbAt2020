@@ -11,10 +11,13 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    //return $router->app->version();
-    return view('index', ['name' => '学院君']);
-});
+$router->get('/', 'BlogsController@getList');
+
+
+//$router->get('/', function () use ($router) {
+//    //return $router->app->version();
+//    return view('index', ['name' => '学院君']);
+//});
 
 $router->get('/about', function () use ($router) {
     //return $router->app->version();
