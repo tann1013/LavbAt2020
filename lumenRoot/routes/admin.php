@@ -41,6 +41,7 @@ $router->group(['middleware'=>['rbac']], function () use ($router) {
     $router->post('admins/update-password', ['uses' => 'AdminsController@updatePassword']);
     $router->post('admins/update-status', ['uses' => 'AdminsController@updateStatus']);
     $router->get('admins/lists', ['uses' => 'AdminsController@lists']);
+
 });
 
 /**
@@ -66,7 +67,14 @@ $router->group([], function () use ($router) {
 
 
     $router->get('rbac/get-admin-permission', ['uses' => 'RbacController@getAdminPerms']);
+
+
+
+
 });
 
 //记账
 $router->post('jz', 'BillController@jz');
+//记账模块
+$router->post('bill/getList', 'BillController@getList');
+

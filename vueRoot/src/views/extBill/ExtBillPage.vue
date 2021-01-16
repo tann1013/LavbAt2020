@@ -72,7 +72,8 @@
 </template>
 
 <script>
-    import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
+    import { ServeGetAdminBill, ServeDeleteRole } from '@/api/rbac'
+    //import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
     //import CreateForm from './modules/EditRoleFrom'
     //import GiveRolePrems from './modules/GiveRolePrems'
 
@@ -126,7 +127,7 @@
                 // 加载数据方法 必须为 Promise 对象
                 loadData: parameter => {
                     const data = Object.assign({}, parameter, this.queryParam)
-                    return ServeGetRoles(data).then(res => {
+                    return ServeGetAdminBill(data).then(res => {
                         return res.data
                     })
                 },

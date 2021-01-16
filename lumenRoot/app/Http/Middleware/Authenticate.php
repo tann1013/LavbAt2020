@@ -25,6 +25,9 @@ class Authenticate
         'admin/auth/login',
         'admin/auth/logout',
         'admin/jz',
+
+        //
+        'admin/bill/getList'
     ];
 
     /**

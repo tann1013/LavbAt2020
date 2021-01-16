@@ -3,6 +3,7 @@
 namespace App\Repositorys;
 
 use App\Models\BillModel;
+use App\Traits\PagingTrait;
 
 /**
  * Class UserRepository
@@ -11,6 +12,8 @@ use App\Models\BillModel;
  */
 class BillRepository
 {
+    use PagingTrait;
+
     /**
      * 通过用户ID查询用户信息
      *
@@ -42,5 +45,35 @@ class BillRepository
         } catch (\Exception $e) {
             return false;
         }
+    }
+
+//
+//`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+//`uid` int(2) DEFAULT NULL,
+//`op_eat` int(2) DEFAULT NULL,
+//`op_traffic` int(2) DEFAULT NULL,
+//`op_other` int(2) DEFAULT NULL,
+//`op_other_notes` varchar(200) DEFAULT NULL,
+//
+//
+    /**
+     * 查询角色列表
+     *
+     * @param int $page 分页数
+     * @param int $page_size 分页大小
+     * @param array $params 查询参数
+     * @return array
+     */
+    public function findAllBills(int $page, int $page_size, array $params = [])
+    {
+        //$rowObj = BillModel::select(['id', 'op_eat as name', 'op_eat']);
+        $rowObj = BillModel::select(['id', 'op_eat as name', 'op_eat', 'op_other', 'addtime as created_at', 'addtime as updated_at']);
+
+
+
+        $total = $rowObj->count();
+
+        $rows = $rowObj->orderBy('id', 'desc')->forPage($page, $page_size)->get()->toArray();
+        return $this->getPagingRows($rows, $total, $page, $page_size);
     }
 }

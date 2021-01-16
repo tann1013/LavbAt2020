@@ -21,7 +21,10 @@ const api = {
   give_role_permission: 'admin/rbac/give-role-permission', // 角色赋予权限接口
   give_admin_permission: 'admin/rbac/give-admin-permission', // 管理员赋予角色及独立权限接口
   get_role_permission: 'admin/rbac/get-role-permission', // 获取角色的权限列表
-  get_admin_permission: 'admin/rbac/get-admin-permission' // 获取管理员的权限列表
+  get_admin_permission: 'admin/rbac/get-admin-permission', // 获取管理员的权限列表
+
+  //新增获取账单接口
+  get_admin_bill: 'admin/bill/getList'
 }
 
 /**
@@ -135,4 +138,14 @@ export function ServeGetRolePerms(data) {
  */
 export function ServeGetAdminPerms(data) {
   return get(api.get_admin_permission, data);
+}
+
+/**
+ *
+ * @param data
+ * @returns {*}
+ * @constructor
+ */
+export function ServeGetAdminBill(data) {
+    return post(api.get_admin_bill, data);
 }

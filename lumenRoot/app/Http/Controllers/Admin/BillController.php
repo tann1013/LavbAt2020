@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 
 class BillController extends CController
 {
+
     public function __construct(BillRepository $billRepository)
     {
         $this->billRepository = $billRepository;
@@ -31,6 +32,30 @@ class BillController extends CController
         ]);
         $this->billRepository->insertBill($request->all());
         return $this->success([], '添加成功...');
+
+    }
+
+    public function getList(Request $request){
+        $page = $request->input('page', 1);
+        $page_size = $request->input('page_size', 10);
+
+
+
+        $this->validate($request, [
+            'page' => 'required|integer:min:1',
+            'page_size' => 'required|in:10,20,30,50,100',
+        ]);
+
+
+
+
+
+
+
+        $result = $this->billRepository->findAllBills($page, $page_size);
+        return $this->success($result);
+
+        //findAllBills
 
     }
 }
