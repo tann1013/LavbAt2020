@@ -72,7 +72,7 @@
 </template>
 
 <script>
-    //import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
+    import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
     //import CreateForm from './modules/EditRoleFrom'
     //import GiveRolePrems from './modules/GiveRolePrems'
 
