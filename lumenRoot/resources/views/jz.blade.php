@@ -18,12 +18,12 @@ $config = array(
     <script src="../assets/js/jquery.min.js"></script>
     <style type="text/css">
 
-        .banner {height:100px;width:100%;color: red;background: mediumslateblue;font-size:30px;}
-        #message {width:100%;height: 50px;font-size: 25px;background: deepskyblue;text-align:center;color: red;}
-        .cell {float:left;width:100%;height:50px;border-bottom: solid 10px darkgray;font-size:35px;background: deepskyblue;color: white}
-        .title {float:left;width:30%;height:50px;}
+        .banner {height:100px;width:100%;color: red;background: mediumslateblue;font-size:20px;}
+        #message {width:100%;height: 50px;font-size: 20px;background: deepskyblue;text-align:center;color: red;}
+        .cell {float:left;width:100%;height:50px;border-bottom: solid 10px darkgray;font-size:20px;background: deepskyblue;color: white}
+        .title {float:left;width:30%;height:50px;font-size:20px;}
         .content {float:left;width:70%;height:30px;}
-        .input {height:50px;width:100%;font-size:35px;}
+        .input {height:50px;width:100%;font-size:20px;}
 
     </style>
 
