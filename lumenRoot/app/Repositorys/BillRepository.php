@@ -47,15 +47,24 @@ class BillRepository
         }
     }
 
-//
-//`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-//`uid` int(2) DEFAULT NULL,
-//`op_eat` int(2) DEFAULT NULL,
-//`op_traffic` int(2) DEFAULT NULL,
-//`op_other` int(2) DEFAULT NULL,
-//`op_other_notes` varchar(200) DEFAULT NULL,
-//
-//
+/*
+`op_eat` int(2) DEFAULT NULL,
+`op_traffic` int(2) DEFAULT NULL,
+`op_other` int(2) DEFAULT NULL,
+`op_other_notes` varchar(200) DEFAULT NULL,
+`total` int(2) DEFAULT NULL,
+`addtime` date DEFAULT NULL,
+`op_today_profit` varchar(5) DEFAULT NULL COMMENT '每日理财收益',
+`op_today_reading` varchar(5) DEFAULT NULL COMMENT '每日读书时长/分钟',
+`op_today_running` varchar(5) DEF
+吃
+通勤
+其他
+今日总支出
+收益
+读书
+跑步
+*/
     /**
      * 查询角色列表
      *
@@ -64,15 +73,22 @@ class BillRepository
      * @param array $params 查询参数
      * @return array
      */
-    public function findAllBills(int $page, int $page_size, array $params = [])
-    {
+    public function findAllBills(int $page, int $page_size, array $params = []){
         //$rowObj = BillModel::select(['id', 'op_eat as name', 'op_eat']);
-        $rowObj = BillModel::select(['id', 'op_eat as name', 'op_eat', 'op_other', 'addtime as created_at', 'addtime as updated_at']);
-
-
-
+        //吃饭交通其他
+        $columsArr = ['id',
+            'op_eat',
+            'op_traffic',
+            'op_other',
+            'op_other_notes',
+            'total',
+            'op_today_profit',
+            'op_today_reading',
+            'op_today_running',
+            'addtime'
+        ];
+        $rowObj = BillModel::select($columsArr);
         $total = $rowObj->count();
-
         $rows = $rowObj->orderBy('id', 'desc')->forPage($page, $page_size)->get()->toArray();
         return $this->getPagingRows($rows, $total, $page, $page_size);
     }

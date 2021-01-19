@@ -83,42 +83,92 @@
             //CreateForm,
             //GiveRolePrems
         },
+
+    //     `op_eat` int(2) DEFAULT NULL,
+    //     `op_traffic` int(2) DEFAULT NULL,
+    //     `op_other` int(2) DEFAULT NULL,
+    //     `op_other_notes` varchar(200) DEFAULT NULL,
+    //     `total` int(2) DEFAULT NULL,
+    //     `addtime` date DEFAULT NULL,
+    //     `op_today_profit` varchar(5) DEFAULT NULL COMMENT '每日理财收益',
+    //     `op_today_reading` varchar(5) DEFAULT NULL COMMENT '每日读书时长/分钟',
+    //     `op_today_running` varchar(5) DEF
+    // 吃
+    // 通勤
+    // 其他
+    // 今日总支出
+    // 收益
+    // 读书
+    // 跑步
+
+
+
         data() {
             return {
                 // 表格栏目
                 columns: [
                     {
-                        title: '角色名称',
-                        dataIndex: 'display_name'
+                        title: '日期',
+                        dataIndex: 'addtime',
+                        width: '90px',
+                        align: 'center',
                     },
                     {
-                        title: '权限字符',
-                        dataIndex: 'name'
+                        title: '吃',
+                        dataIndex: 'op_eat',
+                        width: '90px',
+                        align: 'center',
                     },
                     {
-                        title: '角色描述',
-                        dataIndex: 'description'
+                        title: '通勤',
+                        dataIndex: 'op_traffic',
+                        width: '90px',
+                        align: 'center',
                     },
                     {
-                        title: '创建时间',
-                        dataIndex: 'created_at',
-                        align: 'center'
+                        title: '其他',
+                        dataIndex: 'op_other',
+                        width: '90px',
+                        align: 'center',
                     },
                     {
-                        title: '修改时间',
-                        dataIndex: 'updated_at',
+                        title: '今日总支出',
+                        dataIndex: 'total',
                         sorter: true,
-                        align: 'center'
+                        width: '90px',
+                        align: 'center',
                     },
+                    {
+                        title: '收益',
+                        dataIndex: 'op_today_profit',
+                        width: '90px',
+                        align: 'center',
+                    },
+                    {
+                        title: '读书',
+                        dataIndex: 'op_today_reading',
+                        width: '90px',
+                        align: 'center',
+                    },
+                    {
+                        title: '跑步',
+                        dataIndex: 'op_today_running',
+                        align: 'center',
+                        width: '90px',
+                        align: 'center',
+                    }
+                    /*
+                    ,
                     {
                         title: '操作',
                         dataIndex: 'action',
-                        width: '180px',
+                        width: '50px',
                         align: 'center',
                         scopedSlots: {
                             customRender: 'action'
                         }
                     }
+                    */
                 ],
 
                 // 查询参数

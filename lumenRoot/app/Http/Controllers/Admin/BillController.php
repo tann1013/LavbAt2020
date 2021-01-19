@@ -35,27 +35,19 @@ class BillController extends CController
 
     }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     * @throws \Illuminate\Validation\ValidationException
+     */
     public function getList(Request $request){
         $page = $request->input('page', 1);
         $page_size = $request->input('page_size', 10);
-
-
-
         $this->validate($request, [
             'page' => 'required|integer:min:1',
             'page_size' => 'required|in:10,20,30,50,100',
         ]);
-
-
-
-
-
-
-
         $result = $this->billRepository->findAllBills($page, $page_size);
         return $this->success($result);
-
-        //findAllBills
-
     }
 }
