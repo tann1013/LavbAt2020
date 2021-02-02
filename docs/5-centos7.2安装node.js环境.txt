@@ -1,0 +1,30 @@
+1,安装环境的要求
+
+GCC 4.2 or newer;
+G++ 4.2 or newer;
+Python 2.6 or newer;
+GNU Make 3.81 or newer;
+libexecinfo (FreeBSD and OpenBSD only).
+其中Gcc和G++分别是GNU的c和C++的编译器，在执行编印的过程中把源代码进行预处理转化为汇编语言，生成 .i后缀的文件，再有汇编变成目标机器代码，最后再由目标机器代码生成可执行程序，就可以在命令行中通过系统路径直接调用。
+2,查看系统发行版本
+输入--》cat /etc/redhat-release
+输出--》CentOS Linux release 7.2.1511 (Core)
+
+3,通过rpm -q gcc rpm -q gcc-c++来检查是否安装过gcc和gcc-c++
+
+4,如果没有安装，运行一下命令进行安装
+suod yum -y install gcc gcc-c++ kernel-devel
+
+5,可以使用sudo yum -y update && yum -y groupinstall "Development Tools"来解决过程中遇到的环境问题；
+
+6,然后去官网下载nodejs的安装包到相应的目录，再使用sudo tar -xf 安装包解压；
+
+7,然后cd 进入解压目录，使用sudo ./configure
+
+8,sudo make && make install;
+至此就安装完成了，使用node -v和npm -v可以查看版本信息
+
+作者：ArleyDu
+链接：https://www.jianshu.com/p/a5276f5145a5
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

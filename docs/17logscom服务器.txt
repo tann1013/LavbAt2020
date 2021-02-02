@@ -2,3 +2,29 @@
 
 ssh roo@139.155.28.78
 
+
+
+
+1 yum install gcc gcc-c++
+
+2 yum install nodejs
+
+
+3 那条警告的大概意思就是：警告：为IP地址13.250.177.223的主机（RSA连接的）持久添加到hosts文件中，那就来添加吧！
+解决办法：
+vim /etc/hosts
+添加一行：13.250.177.223'　　github.com
+
+4 13.229.188.59 github.com
+
+5 ssh-keygen -t rsa -b 2048 -C "tann1013@hotmail.com"
+
+
+npm install yarn -g
+
+
+
+yarn config set ignore-engines true
+
+
+
