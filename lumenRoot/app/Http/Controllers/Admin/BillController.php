@@ -30,9 +30,11 @@ class BillController extends CController
             'addtime' => 'string',
             'op_eat' => 'string',
         ]);
-        $this->billRepository->insertBill($request->all());
-        return $this->success([], '添加成功...');
-
+        if($this->billRepository->insertBill($request->all())){
+            return $this->success([], '添加成功...');
+        }else{
+            return $this->fail('添加失败...');
+        }
     }
 
     /**

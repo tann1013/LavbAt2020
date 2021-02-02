@@ -1,3 +1,45 @@
 npm run build
 --此时会生产一个dist目录
 
+---参考服务器配置
+server {　　　　
+    #侦听8080端口
+    listen       8080;　　　　 #定义使用 localhost访问
+    server_name  localhost;
+    #charset koi8-r;
+    #access_log  logs/host.access.log  main;
+    location / {　　　　　　　#定义服务器的默认网站根目录位置
+        root   html;　　　　　　  #定义首页索引文件的名称
+        index  index.html index.htm;
+    }
+}
+
+
+Apache配置httpd-vhosts.conf
+
+
+------succc-------
+<VirtualHost *:80>
+    ServerName 17logs.com
+    DocumentRoot "/opt/lampp/LumenAdminVueBasicAt2020/lumenRoot/public"   # 一级域名指向路径
+    <Directory "/opt/lampp/LumenAdminVueBasicAt2020/lumenRoot/public">
+        Options FollowSymLinks IncludesNOEXEC Indexes
+        DirectoryIndex index.html index.htm index.php
+        AllowOverride all
+        Order Deny,Allow
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+<VirtualHost *:80>
+    ServerName admini.17logs.com
+    DocumentRoot "/opt/lampp/LumenAdminVueBasicAt2020/vueRoot/dist"
+    <Directory "/opt/lampp/LumenAdminVueBasicAt2020/vueRoot/dist">
+        Options FollowSymLinks IncludesNOEXEC Indexes
+        DirectoryIndex index.html index.htm index.php
+        AllowOverride all
+        Order Deny,Allow
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
