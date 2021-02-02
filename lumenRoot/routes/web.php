@@ -34,3 +34,9 @@ $router->get('/app/jz', function () use ($router) {
     //return $router->app->version();
     return view('jz', ['name' => '学院君']);
 });
+
+//新增后台入口:http://admindev.com/admini
+$router->get('/admini', function () use ($router) {
+    //return $router->app->version();
+    //return view('jz', ['name' => '学院君']);
+});
