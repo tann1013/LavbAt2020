@@ -27,9 +27,10 @@ class BillController extends CController
      */
     public function jz(Request $request){
         $this->validate($request, [
-            'addtime' => 'string',
-            'op_eat' => 'string',
+            'addtime' => 'required',
+            'op_eat' => 'required',
         ]);
+        //dd($request->all());
         if($this->billRepository->insertBill($request->all())){
             return $this->success([], '添加成功...');
         }else{

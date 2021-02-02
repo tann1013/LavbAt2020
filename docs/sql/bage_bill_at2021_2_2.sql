@@ -11,7 +11,7 @@
  Target Server Version : 50732
  File Encoding         : 65001
 
- Date: 08/01/2021 17:13:27
+ Date: 02/02/2021 15:04:53
 */
 
 SET NAMES utf8mb4;
@@ -22,21 +22,21 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 DROP TABLE IF EXISTS `bage_bill`;
 CREATE TABLE `bage_bill` (
-                           `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-                           `uid` int(2) DEFAULT NULL,
-                           `op_eat` int(2) DEFAULT NULL,
-                           `op_traffic` int(2) DEFAULT NULL,
-                           `op_other` int(2) DEFAULT NULL,
-                           `op_other_notes` varchar(200) DEFAULT NULL,
-                           `total` int(2) DEFAULT NULL,
-                           `addtime` date DEFAULT NULL,
-                           `op_today_profit` varchar(5) DEFAULT NULL COMMENT '每日理财收益',
-                           `op_today_reading` varchar(5) DEFAULT NULL COMMENT '每日读书时长/分钟',
-                           `op_today_running` varchar(5) DEFAULT NULL COMMENT '每日跑步里程/公里',
-                           `every_month_wages` varchar(5) DEFAULT NULL COMMENT '工资收入',
-                           PRIMARY KEY (`id`),
-                           KEY `addtime` (`addtime`)
-) ENGINE=MyISAM AUTO_INCREMENT=273 DEFAULT CHARSET=utf8;
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uid` int(2) DEFAULT NULL,
+  `op_eat` int(2) DEFAULT NULL,
+  `op_traffic` int(2) DEFAULT NULL,
+  `op_other` int(2) DEFAULT NULL,
+  `op_other_notes` varchar(200) DEFAULT NULL,
+  `total` int(2) DEFAULT NULL,
+  `addtime` date DEFAULT NULL,
+  `op_today_profit` varchar(5) DEFAULT NULL COMMENT '每日理财收益',
+  `op_today_reading` varchar(5) DEFAULT NULL COMMENT '每日读书时长/分钟',
+  `op_today_running` varchar(5) DEFAULT NULL COMMENT '每日跑步里程/公里',
+  `every_month_wages` varchar(5) DEFAULT NULL COMMENT '工资收入',
+  PRIMARY KEY (`id`),
+  KEY `addtime` (`addtime`)
+) ENGINE=MyISAM AUTO_INCREMENT=276 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of bage_bill
@@ -309,6 +309,9 @@ INSERT INTO `bage_bill` VALUES (269, 10, 10, 10, 1000, '', 1020, '2018-10-14', '
 INSERT INTO `bage_bill` VALUES (270, 10, 10, 10, 1000, '', 1020, '2018-10-15', '-100', '30', '60', NULL);
 INSERT INTO `bage_bill` VALUES (271, 101, 2, 22, 2, '22', 26, '2021-01-01', '2', '2', '2', NULL);
 INSERT INTO `bage_bill` VALUES (272, 101, 2, 22, 2, '22', 26, '2021-01-02', '2', '2', '2', NULL);
+INSERT INTO `bage_bill` VALUES (273, 101, 1, 1, 1, '1', 3, '2021-01-08', '1', '1', NULL, '1');
+INSERT INTO `bage_bill` VALUES (274, 101, 1, 1, 1, '1', 3, '2021-01-07', '1', '1', NULL, '11111');
+INSERT INTO `bage_bill` VALUES (275, 101, 28, 12, 6, ' 下午茶5.5', 45, '2021-02-01', ' 0', ' 0', NULL, '');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
