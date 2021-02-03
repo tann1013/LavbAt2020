@@ -1,0 +1,3 @@
+
+
+source /opt/lampp/LumenAdminVueBasicAt2020/docs/sql/localdb_lumen_admin_at_2021_02_02.sql
