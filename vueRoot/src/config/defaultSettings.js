@@ -18,7 +18,7 @@ export default {
   fixedHeader: true, // sticky header
   fixSiderbar: true, // sticky siderbar
   colorWeak: false,
-  title: 'Lumen CMS',
+  title: 'Lavb CMS',
   pwa: false,
   iconfontUrl: '',
   production: process.env.NODE_ENV === 'production' && process.env.VUE_APP_PREVIEW !== 'true'

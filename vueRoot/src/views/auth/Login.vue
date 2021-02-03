@@ -3,15 +3,15 @@
     <div class="login-main">
       <div class="explain">
         <div class="login-aside-doc">
-          <div class="login-aside-title">欢迎来到 LumenCMS</div>
-          <div class="login-aside-desc">LumenCMS 是一个极简易开发的后台管理系统。采用了前后端分离开发模式。</div>
+          <div class="login-aside-title">欢迎来到 LavbCms</div>
+          <div class="login-aside-desc">LavbCms 是一个极简易开发的后台管理系统。采用了前后端分离开发模式。</div>
         </div>
         <login-aside-svg />
       </div>
 
       <div class="login-formbox">
-        <div class="login-title">LumenCMS 管理系统</div>
-        <div class="login-sub-title">欢迎来到 LumenCMS，请登录！</div>
+        <div class="login-title">LavbCms 管理系统</div>
+        <div class="login-sub-title">欢迎来到 LavbCms，请登录！</div>
         <a-form id="formLogin" ref="formLogin" :form="form" @submit="handleSubmit">
           <a-form-item>
             <a-input

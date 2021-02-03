@@ -1,5 +1,5 @@
-# LumenCMS
-LumenCMS是一个轻量级的CMS系统。
+# LavbCms
+LavbCms是一个轻量级的CMS系统。
 
 #### 项目介绍
 

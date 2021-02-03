@@ -23,7 +23,7 @@
     </template>
 
     <template v-slot:footerRender>
-      <span>Copyright ©2020 LumenCMS 版权所有</span>
+      <span>Copyright ©2020 LavbCms 版权所有</span>
     </template>
 
     <router-view />
