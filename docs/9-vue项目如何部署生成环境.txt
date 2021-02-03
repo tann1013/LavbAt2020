@@ -1,10 +1,13 @@
 1 生成编译文件
+npm run build --读取.env文件配置， 此时会生产一个dist目录
 
-npm run build
-//读取.env文件配置， 此时会生产一个dist目录
 NODE_ENV=production
 VUE_APP_PREVIEW=false
 VUE_APP_API_BASE_URL=http://admindev.com/
+
+2 本地编译且启动服务
+npm run serve --读取.env.development文件配置
+
 
 
 ---参考服务器配置

@@ -40,7 +40,7 @@
               :columns="columns"
               :data="loadData"
               :showPagination="true"
-              :scroll="{ x: 1200 }"
+              :scroll="{ x: 800 }"
       >
         <span slot="action" slot-scope="text, record">
           <a v-action:system:role:edit @click="handleEditRole(record)">编辑</a>
@@ -110,51 +110,52 @@
                     {
                         title: '日期',
                         dataIndex: 'addtime',
-                        width: '90px',
+                        width: '15%',
                         align: 'center',
                     },
                     {
                         title: '吃',
                         dataIndex: 'op_eat',
-                        width: '90px',
+                        width: '5%',
                         align: 'center',
                     },
                     {
                         title: '通勤',
                         dataIndex: 'op_traffic',
-                        width: '90px',
+                        width: '5%',
                         align: 'center',
                     },
                     {
                         title: '其他',
                         dataIndex: 'op_other',
-                        width: '90px',
+                        width: '5%',
                         align: 'center',
                     },
                     {
                         title: '今日总支出',
                         dataIndex: 'total',
                         sorter: true,
-                        width: '90px',
+                        width: '10%',
                         align: 'center',
                     },
                     {
                         title: '收益',
                         dataIndex: 'op_today_profit',
-                        width: '90px',
+                        sorter: true,
+                        width: '10%',
                         align: 'center',
                     },
                     {
                         title: '读书',
                         dataIndex: 'op_today_reading',
-                        width: '90px',
+                        width: '5%',
                         align: 'center',
                     },
                     {
                         title: '跑步',
                         dataIndex: 'op_today_running',
                         align: 'center',
-                        width: '90px',
+                        width: '5%',
                         align: 'center',
                     }
                     /*
