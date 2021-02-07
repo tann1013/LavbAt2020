@@ -31,7 +31,7 @@ class BillController extends CController
             'op_eat' => 'required',
         ]);
         //dd($request->all());
-        if($this->billRepository->insertBill($request->all())){
+        if($this->billRepository->setBill($request->all())){
             return $this->success([], '添加成功...');
         }else{
             return $this->fail('添加失败...');

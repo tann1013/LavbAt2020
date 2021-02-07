@@ -4,6 +4,7 @@ namespace App\Repositorys;
 
 use App\Models\BillModel;
 use App\Traits\PagingTrait;
+use Illuminate\Support\Facades\DB;
 
 /**
  * Class UserRepository
@@ -14,17 +15,7 @@ class BillRepository
 {
     use PagingTrait;
 
-    /**
-     * 通过用户ID查询用户信息
-     *
-     * @param int $user_id 用户ID
-     * @param array $field 数据字段
-     * @return User|null
-     */
-    public function findById($user_id, $field = ['*'])
-    {
-        //return User::where('id', $user_id)->first($field);
-    }
+    public $table = 'bage_bill';
 
     public function insertBill(array $data){
         try {
@@ -47,24 +38,6 @@ class BillRepository
         }
     }
 
-/*
-`op_eat` int(2) DEFAULT NULL,
-`op_traffic` int(2) DEFAULT NULL,
-`op_other` int(2) DEFAULT NULL,
-`op_other_notes` varchar(200) DEFAULT NULL,
-`total` int(2) DEFAULT NULL,
-`addtime` date DEFAULT NULL,
-`op_today_profit` varchar(5) DEFAULT NULL COMMENT '每日理财收益',
-`op_today_reading` varchar(5) DEFAULT NULL COMMENT '每日读书时长/分钟',
-`op_today_running` varchar(5) DEF
-吃
-通勤
-其他
-今日总支出
-收益
-读书
-跑步
-*/
     /**
      * 查询角色列表
      *
@@ -91,5 +64,41 @@ class BillRepository
         $total = $rowObj->count();
         $rows = $rowObj->orderBy('id', 'desc')->forPage($page, $page_size)->get()->toArray();
         return $this->getPagingRows($rows, $total, $page, $page_size);
+    }
+
+    private function _save($data){
+        return DB::table($this->table)->insertGetId($data);
+    }
+
+    private function _update($id, $toUpdate){
+        return DB::table($this->table)->where('id', $id)->update($toUpdate);
+    }
+
+    private function _del($id){
+        return DB::table($this->table)->where('id', $id)->delete();
+    }
+
+    private function _getDetail($id){
+        return DB::table($this->table)->where(['id'=>$id])->get()->first();
+    }
+
+    private function _getDetailByWhere($where){
+        return DB::table($this->table)->where($where)->get()->first();
+    }
+
+    /**
+     * @param array $data
+     * @return int
+     */
+    public function setBill(array $data){
+        unset($data['s']);
+        $data['uid'] = 101;
+
+        $detail = $this->_getDetailByWhere(['addtime' => $data['addtime']]);
+        if($detail){
+            return $this->_update($detail->id, $data);
+        }else{
+            return $this->_save($data);
+        }
     }
 }
