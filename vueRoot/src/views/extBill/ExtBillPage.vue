@@ -110,7 +110,7 @@
                     {
                         title: '日期',
                         dataIndex: 'addtime',
-                        width: '12%',
+                        width: '10%',
                         align: 'center',
                     },
                     {
@@ -130,6 +130,13 @@
                         dataIndex: 'op_other',
                         width: '5%',
                         align: 'center',
+                    },
+                    {
+                        title: '其他说明',
+                        dataIndex: 'op_other_notes',
+                        width: '10%',
+                        align: 'left',
+
                     },
                     {
                         title: '今日总支出￥',
