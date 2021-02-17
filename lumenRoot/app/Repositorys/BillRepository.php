@@ -62,7 +62,7 @@ class BillRepository
         ];
         $rowObj = BillModel::select($columsArr);
         $total = $rowObj->count();
-        $rows = $rowObj->orderBy('id', 'desc')->forPage($page, $page_size)->get()->toArray();
+        $rows = $rowObj->orderBy('addtime', 'desc')->forPage($page, $page_size)->get()->toArray();
         return $this->getPagingRows($rows, $total, $page, $page_size);
     }
 
