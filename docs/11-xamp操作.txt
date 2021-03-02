@@ -1,0 +1,158 @@
+
+一、腾讯云安装xamp集成环境
+https://www.apachefriends.org/index.html
+
+https://blog.csdn.net/crossangles_2017/article/details/78560846
+
+1 下载
+wget  https://www.apachefriends.org/xampp-files/7.1.31/xampp-linux-x64-7.1.31-2-installer.run
+
+
+//谭庄下载
+wget http://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/5.5.19/xampp-linux-x64-5.5.19-0-installer.run
+
+
+https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/7.4.13/
+https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/7.4.13/xampp-linux-x64-7.4.13-0-installer.run/
+
+
+2 移动到/opt下
+3 赋予777权限
+4 安装
+./xampp-linux-x64-7.0.32-0-installer.run
+
+5 验证是否成功
+访问：http://129.204.159.229/dashboard/
+
+二、xamp一些配置目录
+1，xampp安装完成后，所有相关目录和档案位置在：/opt/lampp
+2，apache的配置文件在：
+/opt/lampp/etc/original/httpd.conf
+/opt/lampp/apache2/conf/httpd.conf -- 无效
+//sudo vim /opt/lampp/etc/httpd.conf +229  --
+
+/opt/lampp/LumenAdminVueBasicAt2020/lumenRoot/public
+
+
+3，vhost的文件在：/opt/lampp/etc/original/extra/httpd-vhosts.conf
+4，php的配置文件在：/opt/lampp/etc/php.ini
+5，mysql的配置文件在：/opt/lampp/etc/my.cnf
+6，网站根目录在：/opt/lampp/htdocs/
+7，浏览器输入localhost后默认进入的目录是：/opt/lampp/htdocs/dashboard/
+————————————————
+版权声明：本文为CSDN博主「释雨」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/smm188/article/details/75577535
+
+三、安装git
+
+1 确定是否安装giT
+rpm -qa|grep git
+
+2  yum安装git
+yum install git
+
+curl
+
+
+四、本地项目推送到github
+
+https://github.com/tann1013/lumenV5_8_otc.git
+
+1 进入项目根目录
+
+2 推送到远端
+git remote add origin htps://github.com/tann1013/lumenV5_8_otc.git
+
+3 推送远端
+git push -u origin master
+
+
+centos安装curl
+curl
+1 下载
+wget https://curl.haxx.se/download/curl-7.54.0.tar.gz
+2 解压
+tar -zxf curl-7.54.0.tar.gz
+cd curl-7.54.0
+3 安装
+./configure  #第一步检查错误，如果运行过程中出现错误，提示没有c相关的编译器，则执行"yum install gcc"命令。
+make  #第二步
+make test (optional) #此步骤可跳过
+make install  #第三步
+
+
+五、xamp安装composer
+1 下载composer.phar
+curl -sS https://getcomposer.org/installer | php
+
+wget https://getcomposer.org/download/2.0.2/composer.phar
+
+2 把composer.phar移动到环境下让其变成可执行
+mv composer.phar /usr/local/bin/composer
+3 测试
+composer -V
+*若出现command not found 增加/usr/local/bin进PATH
+
+export PATH=/usr/local/bin:$PATH
+
+4 换中国镜像(或者更换阿里云)
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+————————————————
+版权声明：本文为CSDN博主「Jasper_zippo」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/Jasper_zippo/article/details/80176610
+
+
+https://www.apachefriends.org/xampp-files/7.1.31/xampp-linux-x64-7.1.31-2-installer.run
+
+【XAMP常用操作命令】
+1 启动
+/opt/lampp/lampp start
+
+
+Warning: Permanently added 'gitee.com,180.97.125.228' (ECDSA) to the list of known hosts.
+#码云
+212.64.62.174 gitee.com www.gitee.com
+
+
+[xamp环境操作mysql]
+1 命令行进入
+/opt/lampp/bin/mysql -uroot -p
+
+2 添加环境变量
+2.1、添加环境变量
+简单的方法是可以直接将/opt/lampp/bin/目录添加到环境变量中如下操作，这样就可以直接使用mysql和mysqldump命令了。
+2.2、打开 ~/.bashrc 文件
+vim ~/.bashrc
+在最后一行加入
+export PATH=/opt/lampp/bin:$PATH
+ESC 然后输入:wqEnter保存退出
+2.3、执行环境变量的shell脚本
+source ~/.bashrc
+这样就可以直接使用mysql -uroot -p登录mysql了。
+
+3 修改密码
+use mysql;
+UPDATE user SET password=password('root') WHERE user='root';
+flush privileges;
+
+4 给开发者赋予访问权限
+
+4.1 测试是否准许远程链接
+➜  ~ telnet 129.204.59.81 3306
+Trying 129.204.59.81...
+Connected to 129.204.59.81.
+Escape character is '^]'.
+GHost '117.153.109.61' is not allowed to connect to this MySQL serverConnection closed by foreign host.
+
+4.2 进入数据库操作
+mysql> use mysql
+mysql> GRANT ALL ON *.* to root@'192.168.1.4' IDENTIFIED BY 'your-root-password';
+mysql> FLUSH PRIVILEGES;
+注意： your-root-password 填写你的服务器 mysql 的密码
+
+
+
+local_hemawechatdb
+source /opt/lampp/htdocs/web/shop-wechat-saasbos/doc/database
+
+支持二级页面

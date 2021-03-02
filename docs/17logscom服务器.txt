@@ -51,3 +51,6 @@ location / {
   try_files $uri $uri/ /index.html;
 }
 
+
+
+chunk-vendors.b7294f96.js:1 Uncaught SyntaxError: Unexpected token '<'
