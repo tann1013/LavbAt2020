@@ -1,7 +1,7 @@
 <?php
 $config = array(
-    'version'=>'3.2',
-    'name'   => 'TallyBook-V3.1',
+    'version'=>'3.3',
+    'name'   => 'TallyBook-V3.3',
     'desc' => '补充工资收入',
 );
 ?>
@@ -124,7 +124,7 @@ $config = array(
         //    op_today_reading = 30;
         //    op_today_running = 60;
 
-        if(op_eat != '' && op_traffic != '' && op_today_profit != '' && addtime!= '' && op_today_reading != '' && op_today_running != '' ){
+        if(op_eat != '' && op_traffic != '' && op_today_profit != '' && op_today_reading != '' && op_today_running != '' && addtime!= ''){
             $.post('/admin/jz',{
                 'addtime':addtime,
                 'op_eat':op_eat,
@@ -148,7 +148,8 @@ $config = array(
                 }
             },'json');
         }else{
-            $('#message').html('时间、吃饭、交通、每日收益,读书,跑步必须有值！');
+            $('#message').html("<p style='font-size: 15px;text-align: left'>吃饭、交通、每日收益、读书和跑步必须有值！</p>");
+            //alert('吃饭、交通、每日收益、读书和跑步必须有值！');
         }
     });
 </script>
