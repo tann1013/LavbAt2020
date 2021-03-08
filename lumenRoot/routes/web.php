@@ -41,15 +41,16 @@ $router->get('/admini', function () use ($router) {
     //return view('jz', ['name' => '学院君']);
 });
 //新增组件模块 module
-$router->get('/module', function () use ($router) {
-//    //return $router->app->version();
-//    $html = <<<eof
-// var myChart = echarts.init(document.getElementById('main'));
-//eof;
-//
-//
-//    return view('moduleIndex', ['html' => $html]);
-});
+//$router->get('/module', function () use ($router) {
+////    //return $router->app->version();
+////    $html = <<<eof
+//// var myChart = echarts.init(document.getElementById('main'));
+////eof;
+////
+////
+////    return view('moduleIndex', ['html' => $html]);
+//});
 
 $router->get('/module', 'EchartController@module');
+
 
