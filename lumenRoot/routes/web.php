@@ -51,6 +51,6 @@ $router->get('/admini', function () use ($router) {
 ////    return view('moduleIndex', ['html' => $html]);
 //});
 
-$router->get('/module', 'EchartController@module');
+$router->get('/chart', 'EchartController@module');
 
 

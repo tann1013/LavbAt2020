@@ -19,9 +19,11 @@ namespace App\Http\Controllers;
 class EchartController extends Controller
 {
     public function module(){
-        //$echartOption = $this->_optionOne();//echartOption
+        //$echartOption = $this->_optionSingleBar();
+        //$echartOption = $this->_optionMultBar();
         //$echartOption = $this->_pipe();//echartOption
-        $echartOption = $this->_optionSingleLine();
+        //$echartOption = $this->_optionSingleLine();
+        $echartOption = $this->_optionMultiLine();
 
         return view('moduleIndex', ['echartOption' => $echartOption]);
     }
@@ -32,7 +34,7 @@ class EchartController extends Controller
      *
      * @return string
      */
-    private function _optionTwo(){
+    private function _optionSingleBar(){
         $html = <<<eof
     // 指定图表的配置项和数据
     var option = {
@@ -63,18 +65,18 @@ eof;
      *
      * @return string
      */
-    private function _optionOne(){
+    private function _optionMultBar(){
         $html = <<<eof
     var option = {
         legend: {},
         tooltip: {},
         dataset: {
             source: [
-                ['product', '2015', '2016', '2017'],
-                ['Matcha Latte', 43.3, 85.8, 93.7],
-                ['Milk Tea', 83.1, 73.4, 55.1],
-                ['Cheese Cocoa', 86.4, 65.2, 82.5],
-                ['Walnut Brownie', 72.4, 53.9, 39.1]
+                ['type', 'SO2', '烟尘', '污水'],
+                ['一月', 43.3, 85.8, 93.7],
+                ['二月', 83.1, 73.4, 55.1],
+                ['三月', 86.4, 65.2, 82.5],
+                ['四月', 72.4, 53.9, 39.1]
             ]
         },
         xAxis: {type: 'category'},
@@ -196,7 +198,7 @@ eof;
         trigger: 'axis'
     },
     legend: {
-        data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎']
+        data: ['SO2', '烟尘', '污水']
     },
     grid: {
         left: '3%',
@@ -219,34 +221,22 @@ eof;
     },
     series: [
         {
-            name: '邮件营销',
+            name: 'SO2',
             type: 'line',
             stack: '总量',
             data: [120, 132, 101, 134, 90, 230, 210]
         },
         {
-            name: '联盟广告',
+            name: '烟尘',
             type: 'line',
             stack: '总量',
             data: [220, 182, 191, 234, 290, 330, 310]
         },
         {
-            name: '视频广告',
+            name: '污水',
             type: 'line',
             stack: '总量',
             data: [150, 232, 201, 154, 190, 330, 410]
-        },
-        {
-            name: '直接访问',
-            type: 'line',
-            stack: '总量',
-            data: [320, 332, 301, 334, 390, 330, 320]
-        },
-        {
-            name: '搜索引擎',
-            type: 'line',
-            stack: '总量',
-            data: [820, 932, 901, 934, 1290, 1330, 1320]
         }
     ]
 };
