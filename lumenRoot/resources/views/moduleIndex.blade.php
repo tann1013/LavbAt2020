@@ -17,7 +17,7 @@
     //2 指定图表的配置项和数据
     <?=$echartOption?>
     //3 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(optionTwo);
+    myChart.setOption(option);
 
     //import * as echarts from 'echarts';
 
