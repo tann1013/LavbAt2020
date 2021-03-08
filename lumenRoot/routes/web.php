@@ -40,3 +40,8 @@ $router->get('/admini', function () use ($router) {
     //return $router->app->version();
     //return view('jz', ['name' => '学院君']);
 });
+//新增组件模块 module
+$router->get('/module', function () use ($router) {
+    //return $router->app->version();
+    return view('moduleIndex', ['name' => '学院君']);
+});
