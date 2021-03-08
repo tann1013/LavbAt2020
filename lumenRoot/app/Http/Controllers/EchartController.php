@@ -20,7 +20,7 @@ class EchartController extends Controller
 
 
     /**
-     * 多维条形图
+     *单个条形图
      *
      * @return string
      */
@@ -50,7 +50,7 @@ eof;
     }
 
     /**
-     * 多维条形图
+     * 多个条形图
      * https://echarts.apache.org/v4/examples/zh/editor.html?c=dataset-simple0
      *
      * @return string
@@ -83,6 +83,11 @@ eof;
         return $html;
     }
 
+    /**
+     * 饼图
+     *
+     * @return string
+     */
     private function _pipe(){
         $html = <<<eof
 option = {
