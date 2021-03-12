@@ -25,7 +25,7 @@ class BlogsRepository
      */
     public function getBlogs(int $page, int $page_size, array $params = [])
     {
-        $rowObj = BlogsModel::select(['id', 'title']);
+        $rowObj = BlogsModel::select(['id', 'title', 'intro', 'tags','create_time']);
 
         $orderBy = 'id';
         $sort = 'desc';
@@ -48,5 +48,16 @@ class BlogsRepository
         $rows = $rowObj->orderBy($orderBy, $sort)->forPage($page, $page_size)->get()->toArray();
         return $this->getPagingRows($rows, $total, $page, $page_size);
     }
+
+    /**
+     * @param $user_id
+     * @param array $field
+     * @return mixed
+     */
+    public function getDetail($id, $field = ['*'])
+    {
+        return BlogsModel::where('id', $id)->first($field);
+    }
+
 
 }

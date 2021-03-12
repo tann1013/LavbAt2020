@@ -50,10 +50,25 @@ class BlogsController extends CController
         if(empty($data) ){
             //return $this->toWebJson(-3);
         }
-
-        //dd($data);
-
         return view('indexV2', ['data' => $data]);
+    }
+
+    /**
+     * @param Request $request
+     * @return array
+     */
+    public function getContent(Request $request){
+        //1 getInputs
+        //dd($request->all());
+
+        //2 logic
+        $inputs = array();
+        $detail = $this->blogsRepository->getDetail($request->input('id'), ['id','title', 'intro','content']);
+        //3 response
+        if(empty($detail) ){
+            //return $this->toWebJson(-3);
+        }
+        return view('content', ['detail' => $detail]);
     }
 
     /**

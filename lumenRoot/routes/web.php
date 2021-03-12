@@ -12,7 +12,7 @@
 */
 
 $router->get('/', 'BlogsController@getList');
-
+$router->get('/content', 'BlogsController@getContent');
 
 //$router->get('/', function () use ($router) {
 //    //return $router->app->version();
@@ -24,10 +24,6 @@ $router->get('/about', function () use ($router) {
     return view('about', ['name' => '学院君']);
 });
 
-$router->get('/content', function () use ($router) {
-    //return $router->app->version();
-    return view('content', ['name' => '学院君']);
-});
 
 //记账app
 $router->get('/app/jz', function () use ($router) {

@@ -115,13 +115,15 @@
             <div class="row">
                 <div class="col-md-12 post-container">
                     <h2 class="post-title">
-                        <a href="content" title=""><?php echo $value['title']?>/a>
+                        <a href="content?id=<?=$value['id']?>" title="">
+                            <?php echo $value['title']?>
+                        </a>
                     </h2>
                     <div class="meta-box">
             <span class="m-post-date">
               <i class="fa fa-calendar-o">
               </i>
-              2015年6月3日
+              <?php echo date('Y-m-d H:i:s',$value['create_time'])?>
             </span>
                         <span class="comments-link">
               <a href="" class="ds-thread-count" data-thread-key="9500" title="Comment on 毕业两周年">
@@ -132,9 +134,7 @@
             </span>
                     </div>
                     <div class="post-content">
-                        <p>
-                            如果您在使用中遇到什么麻烦的事情,那么baby千万不要捶胸顿足,在友情链接界面您会看到作者的博客链接，您可以通过访问作者的博客留言联系我
-                        </p>
+                        <p><?php echo $value['intro']?></p>
                     </div>
                     <div class="meta-box">
             <span class="cat-links">
@@ -144,7 +144,7 @@
                   分类:
               </b>
               <a href="topics/life/diary.htm">
-                  测试
+                  博客
               </a>
             </span>
                         <span class="tag-links">
@@ -154,7 +154,7 @@
                   标签:
               </b>
               <a href="tags/毕业.htm" rel="tag">
-                  异步
+                  <?php echo $value['tags'] ? $value['tags'] : '暂无'?>
               </a>
             </span>
                     </div>
