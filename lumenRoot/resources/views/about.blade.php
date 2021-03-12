@@ -88,18 +88,17 @@
     </div>
     <div class="row">
         <div class="col-md-12 post-container">
-            <h2 class="post-title">
+            <h2 class="post-title" style="display: none;">
                 <a href="about.php" rel="bookmark">
                     关于Me
                 </a>
             </h2>
             <div class="post-content">
-                <div class="row">
+                <div class="row" style="display: none">
                     <div class="col-md-12">
-                        <div class="thumbnail">
+                        <div class="thumbnail" style="display:block;">
                             <a href="javascript:;">
-                                <img title="关于我 @Ybsat" src="assets/img/about.png" alt="关于我 @Ybsat"
-                                />
+                                <img title="关于我 @Ybsat" src="assets/img/about.png" alt="关于我 @Ybsat"/>
                             </a>
                             <div class="caption">
                                 <h3>
@@ -142,13 +141,11 @@
                             蜗牛工作室简介
                         </h3>
                         <p>
-                           主营业务，APP开发，微信小程序和各类Web管理平台等整体解决方案。
+                           主营业务，APP开发，微信小程序、微信公号和各类软件管理平台的等开发服务。
                         </p>
                         <footer class="pull-right">
-                            二零二零年九月落笔于
-                            <cite title="杭州">
-                                杭州
-                            </cite>
+                            二零二零年
+                            {{--<cite title="杭州">杭州</cite>--}}
                         </footer>
                     </div>
                 </div>

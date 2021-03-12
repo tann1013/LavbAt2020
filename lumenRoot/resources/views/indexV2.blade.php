@@ -8,7 +8,7 @@
     <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>蜗牛工作室-专注微信小程序 APP 各行业管理后台系统等整体解决方案服务</title>
+    <title>蜗牛工作室-专注APP开发|微信小程序|微信公号和各类行业软件管理系统等开发服务</title>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/nprogress.css" rel="stylesheet" />
@@ -194,14 +194,24 @@
                 </div>
                 <div class="col-md-4">
                     <a href="" class="thumbnail">
-                        <img src="assets/img/about.png" alt="路人简介">
+                        <img src="assets/img/works.png" alt="作品展示">
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="" class="thumbnail">
-                        <img src="assets/img/book.png" alt="作品推荐">
+                        <img src="assets/img/works.png" alt="作品展示">
                     </a>
                 </div>
+                {{--<div class="col-md-4">--}}
+                    {{--<a href="" class="thumbnail">--}}
+                        {{--<img src="assets/img/about.png" alt="路人简介">--}}
+                    {{--</a>--}}
+                {{--</div>--}}
+                {{--<div class="col-md-4">--}}
+                    {{--<a href="" class="thumbnail">--}}
+                        {{--<img src="assets/img/book.png" alt="作品推荐">--}}
+                    {{--</a>--}}
+                {{--</div>--}}
             </div>
         </div>
     </div>

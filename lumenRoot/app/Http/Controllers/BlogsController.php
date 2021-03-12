@@ -45,7 +45,6 @@ class BlogsController extends CController
         //2 logic
         $inputs = array();
         $data = $this->blogsRepository->getBlogs($page, $size, $inputs);
-
         //3 response
         if(empty($data) ){
             //return $this->toWebJson(-3);
