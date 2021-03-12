@@ -20,10 +20,10 @@ class EchartController extends Controller
 {
     public function module(){
         //$echartOption = $this->_optionSingleBar();
-        //$echartOption = $this->_optionMultBar();
+        $echartOption = $this->_optionMultBar();
         //$echartOption = $this->_pipe();//echartOption
         //$echartOption = $this->_optionSingleLine();
-        $echartOption = $this->_optionMultiLine();
+        //$echartOption = $this->_optionMultiLine();
 
         return view('moduleIndex', ['echartOption' => $echartOption]);
     }
