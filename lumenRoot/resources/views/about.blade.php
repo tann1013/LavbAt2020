@@ -112,11 +112,9 @@
                 <div class="panel panel-default" id="simple-intro">
                     <div class="panel-body">
                         <h3>
-                            简单概述
+                            作者简介
                         </h3>
-                        <p>
-                            学程序是因为有梦想，希望自己以后能够和小伙伴们创建一家属于自己的互联网公司。对前端(FrontEnd) &amp; 交互体验(User Experience)/后端(Backend)/存储(Storage)/等相关技术十分感兴趣，喜欢变着花样（寻求最优方案）去完成想要完成的事情。可以独立设计并完成网站或软件视觉设计，有轻微代码洁癖。
-                        </p>
+                        <p>暂无</p>
                         <p>
                             我的联系方式：
                         </p>
@@ -126,18 +124,6 @@
                                     电子邮箱:
                                     <kbd>
                                         tann1013@hotmail.com
-                                    </kbd>
-                                </li>
-                                <li>
-                                    腾讯QQ:
-                                    <kbd>
-                                        @xxx
-                                    </kbd>
-                                </li>
-                                <li>
-                                    新浪微博:
-                                    <kbd>
-                                        https://weibo.com/tann1013
                                     </kbd>
                                 </li>
                                 <li>
@@ -153,13 +139,13 @@
                 <div class="panel panel-default">
                     <div class="panel-body clearfix">
                         <h3>
-                            往事如烟
+                            蜗牛工作室简介
                         </h3>
                         <p>
-                            暂未开发暂未开发暂未开发暂未开发暂未开发暂未开发暂未开发。
+                           主营业务，APP开发，微信小程序和各类Web管理平台等整体解决方案。
                         </p>
                         <footer class="pull-right">
-                            二零一五年九月落笔于
+                            二零二零年九月落笔于
                             <cite title="杭州">
                                 杭州
                             </cite>

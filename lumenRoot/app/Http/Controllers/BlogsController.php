@@ -21,7 +21,7 @@ class BlogsController extends CController
     const CHECK_INPUTS_ERR_CODE = -1;//参数校验错误
 
     protected  $blogsRepository;
-    protected  $limit = 11;
+    protected  $limit = 2;
 
     /**
      * StandardTechController constructor.

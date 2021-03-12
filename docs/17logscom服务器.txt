@@ -3,6 +3,7 @@
 ssh root@139.155.28.78
 
 
+cd /opt/lampp/LumenAdminVueBasicAt2020/
 
 
 1 yum install gcc gcc-c++
