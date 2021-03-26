@@ -94,8 +94,6 @@ class BillRepository
     public function setBill(array $data){
         unset($data['s']);
         $data['uid'] = 101;
-
-        dd($data);
         $detail = $this->_getDetailByWhere(['addtime' => $data['addtime']]);
         if($detail){
             return $this->_update($detail->id, $data);
