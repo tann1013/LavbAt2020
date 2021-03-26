@@ -116,30 +116,30 @@
                     {
                         title: '吃￥',
                         dataIndex: 'op_eat',
-                        width: '5%',
+                        width: '8%',
                         align: 'center',
                     },
                     {
                         title: '通勤￥',
                         dataIndex: 'op_traffic',
-                        width: '5%',
+                        width: '8%',
                         align: 'center',
                     },
                     {
                         title: '其他￥',
                         dataIndex: 'op_other',
-                        width: '5%',
+                        width: '8%',
                         align: 'center',
                     },
                     {
                         title: '其他说明',
                         dataIndex: 'op_other_notes',
-                        width: '10%',
+                        width: '12%',
                         align: 'left',
 
                     },
                     {
-                        title: '今日总支出￥',
+                        title: '总支￥',
                         dataIndex: 'total',
                         sorter: true,
                         width: '10%',
@@ -154,16 +154,23 @@
                         align: 'center',
                     },
                     {
+                        title: '收益说明',
+                        dataIndex: 'op_today_profit_notes',
+                        sorter: true,
+                        width: '12%',
+                        align: 'center',
+                    },
+                    {
                         title: '读书min',
                         dataIndex: 'op_today_reading',
-                        width: '6%',
+                        width: '9%',
                         align: 'center',
                     },
                     {
                         title: '跑步km',
                         dataIndex: 'op_today_running',
                         align: 'center',
-                        width: '7%',
+                        width: '9%',
                         align: 'center',
                     }
                     /*

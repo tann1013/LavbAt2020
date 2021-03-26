@@ -61,23 +61,29 @@ $config = array(
         <div class="content"><input type="text" class="input" name="total" style="color: red"/></div>
     </div>
     <hr style="background: dodgerblue;height: 10px";>
-    <div class="cell">
+    <div class="cell" style="background: #1abc9c">
         <div class="title">①收益/￥</div>
         <div class="content"><input type="text" class="input" name="op_today_profit"/></div>
     </div>
-    <div class="cell">
+    <div class="cell" style="background: #1abc9c">
+        <div class="title">①收益备注</div>
+        <div class="content">
+            <input type="text" class="input" name="op_today_profit_notes" placeholder="收益备注（理财或其他）"/>
+        </div>
+    </div>
+    <div class="cell" style="background: #1abc9c">
         <div class="title">②读书/min</div>
         <div class="content"><input type="text" class="input" name="op_today_reading"/></div>
     </div>
-    <div class="cell">
+    <div class="cell" style="background: #1abc9c">
         <div class="title">③跑步/km</div>
         <div class="content"><input type="text" class="input" name="op_today_running"/></div>
     </div>
-    <div class="cell">
+    <div class="cell" style="background: #1abc9c">
         <div class="title">④工资/￥</div>
         <div class="content"><input type="text" class="input" name="every_month_wages" placeholder="发工资再填写"/></div>
     </div>
-    <div class="cell">
+    <div class="cell" style="background: #1abc9c">
         <div class="title"><button style="height: 50px;font-size:30px;color:white;width: 100%;background: steelblue">历史</button></div>
         <div class="content"><input type="submit" value="提交当天数据" style="height: 50px;font-size:30px;color:white;width: 100%;color: black;background: cornflowerblue"></div>
     </div>
@@ -90,12 +96,13 @@ $config = array(
 <script type="text/javascript">
     $('.form_zone input[type=submit]').click(function(){
         //config
-        var every_limit = 60;//每天最大预算
+        var every_limit = 50;//每天最大预算
         var addtime    = $('.form_zone input[name=addtime]').val();
         var op_eat     = $('.form_zone input[name=op_eat]').val();
         var op_traffic = $('.form_zone input[name=op_traffic]').val();
         var op_other   = $('.form_zone input[name=op_other]').val();
-        var op_today_profit  = $('.form_zone input[name=op_today_profit]').val();
+        var op_today_profit        = $('.form_zone input[name=op_today_profit]').val();
+        var op_today_profit_notes  = $('.form_zone input[name=op_today_profit_notes]').val();
         var op_today_reading = $('.form_zone input[name=op_today_reading]').val();
         var op_today_running = $('.form_zone input[name=op_today_running]').val();
         var op_other_notes   = $('.form_zone input[name=op_other_notes]').val();
@@ -133,6 +140,7 @@ $config = array(
                 'op_other_notes':op_other_notes,
                 'total':total,
                 'op_today_profit':op_today_profit,
+                'op_today_profit_notes':op_today_profit_notes,
                 'op_today_reading':op_today_reading,
                 'op_today_running':op_today_running,
                 'every_month_wages':every_month_wages

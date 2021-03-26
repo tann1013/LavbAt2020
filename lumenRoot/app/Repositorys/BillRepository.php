@@ -56,6 +56,7 @@ class BillRepository
             'op_other_notes',
             'total',
             'op_today_profit',
+            'op_today_profit_notes',
             'op_today_reading',
             'op_today_running',
             'addtime'
@@ -94,6 +95,7 @@ class BillRepository
         unset($data['s']);
         $data['uid'] = 101;
 
+        dd($data);
         $detail = $this->_getDetailByWhere(['addtime' => $data['addtime']]);
         if($detail){
             return $this->_update($detail->id, $data);
