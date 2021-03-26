@@ -77,4 +77,7 @@ $router->group([], function () use ($router) {
 $router->post('jz', 'BillController@jz');
 //记账模块
 $router->post('bill/getList', 'BillController@getList');
+//蜗牛工作室，任务模块
+$router->post('bill/getTaskList', 'BillController@getTaskList');
+
 

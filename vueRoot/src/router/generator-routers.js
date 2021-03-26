@@ -30,6 +30,7 @@ export const constantRouterComponents = {
 
   'component': () => import('@/views/other/component'),
   'ExtBillPage': () => import('@/views/extBill/ExtBillPage.vue'),
+  'ExtTaskPage': () => import('@/views/extTask/ExtTaskPage.vue'),
 }
 
 /**
