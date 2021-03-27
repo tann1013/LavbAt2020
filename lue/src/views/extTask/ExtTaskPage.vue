@@ -72,7 +72,7 @@
 </template>
 
 <script>
-    import { ServeGetAdminBill, ServeDeleteRole } from '@/api/rbac'
+    import { ServeGetAdminTask, ServeDeleteRole } from '@/api/rbac'
     //import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
     //import CreateForm from './modules/EditRoleFrom'
     //import GiveRolePrems from './modules/GiveRolePrems'
@@ -84,88 +84,38 @@
             //GiveRolePrems
         },
 
-    //     `op_eat` int(2) DEFAULT NULL,
-    //     `op_traffic` int(2) DEFAULT NULL,
-    //     `op_other` int(2) DEFAULT NULL,
-    //     `op_other_notes` varchar(200) DEFAULT NULL,
-    //     `total` int(2) DEFAULT NULL,
-    //     `addtime` date DEFAULT NULL,
-    //     `op_today_profit` varchar(5) DEFAULT NULL COMMENT '每日理财收益',
-    //     `op_today_reading` varchar(5) DEFAULT NULL COMMENT '每日读书时长/分钟',
-    //     `op_today_running` varchar(5) DEF
-    // 吃
-    // 通勤
-    // 其他
-    // 今日总支出
-    // 收益
-    // 读书
-    // 跑步
+        /*
+        ws: [{id: 1, title: "给魏开发系统", status: 1, create_time: 1992}]
 
-
-
+         */
         data() {
             return {
                 // 表格栏目
                 columns: [
                     {
-                        title: '日期',
-                        dataIndex: 'addtime',
-                        width: '10%',
-                        align: 'center',
-                    },
-                    {
-                        title: '吃￥',
-                        dataIndex: 'op_eat',
+                        title: 'ID',
+                        dataIndex: 'id',
                         width: '5%',
                         align: 'center',
                     },
                     {
-                        title: '通勤￥',
-                        dataIndex: 'op_traffic',
+                        title: '添加时间',
+                        dataIndex: 'create_time',
                         width: '5%',
                         align: 'center',
                     },
                     {
-                        title: '其他￥',
-                        dataIndex: 'op_other',
+                        title: '任务名称',
+                        dataIndex: 'title',
+                        width: '50%',
+                        align: 'center',
+                    },
+                    {
+                        title: '状态',
+                        dataIndex: 'status',
                         width: '5%',
                         align: 'center',
                     },
-                    {
-                        title: '其他说明',
-                        dataIndex: 'op_other_notes',
-                        width: '10%',
-                        align: 'left',
-
-                    },
-                    {
-                        title: '今日总支出￥',
-                        dataIndex: 'total',
-                        sorter: true,
-                        width: '10%',
-                        align: 'center',
-                        color: 'red',
-                    },
-                    {
-                        title: '收益￥',
-                        dataIndex: 'op_today_profit',
-                        sorter: true,
-                        width: '10%',
-                        align: 'center',
-                    },
-                    {
-                        title: '读书min',
-                        dataIndex: 'op_today_reading',
-                        width: '6%',
-                        align: 'center',
-                    },
-                    {
-                        title: '跑步km',
-                        dataIndex: 'op_today_running',
-                        align: 'center',
-                        width: '7%',
-                        align: 'center',
-                    }
                     /*
                     ,
                     {
@@ -186,7 +136,7 @@
                 // 加载数据方法 必须为 Promise 对象
                 loadData: parameter => {
                     const data = Object.assign({}, parameter, this.queryParam)
-                    return ServeGetAdminBill(data).then(res => {
+                    return ServeGetAdminTask(data).then(res => {
                         return res.data
                     })
                 },

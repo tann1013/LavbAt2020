@@ -24,7 +24,8 @@ const api = {
   get_admin_permission: 'admin/rbac/get-admin-permission', // 获取管理员的权限列表
 
   //新增获取账单接口
-  get_admin_bill: 'admin/bill/getList'
+  get_admin_bill: 'admin/bill/getList',
+  get_admin_task: 'admin/bill/getTaskList'
 }
 
 /**
@@ -148,4 +149,14 @@ export function ServeGetAdminPerms(data) {
  */
 export function ServeGetAdminBill(data) {
     return post(api.get_admin_bill, data);
+}
+
+/**
+ *
+ * @param data
+ * @returns {*}
+ * @constructor
+ */
+export function ServeGetAdminTask(data) {
+    return post(api.get_admin_task, data);
 }
