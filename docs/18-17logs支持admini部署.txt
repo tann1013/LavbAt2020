@@ -1,0 +1,35 @@
+Apache配置httpd-vhosts.conf
+
+
+vim /opt/lampp/etc/extra/httpd-vhosts.conf
+
+/opt/lampp/lampp stop|start
+
+
+------succc-------
+<VirtualHost *:80>
+    ServerName 17logs.com
+    DocumentRoot "/opt/lampp/LumenAdminVueBasicAt2020/lumenRoot/public"   # 一级域名指向路径
+    <Directory "/opt/lampp/LumenAdminVueBasicAt2020/lumenRoot/public">
+        Options FollowSymLinks IncludesNOEXEC Indexes
+        DirectoryIndex index.html index.htm index.php
+        AllowOverride all
+        Order Deny,Allow
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+<VirtualHost *:80>
+    ServerName admini.17logs.com
+    DocumentRoot "/opt/lampp/LumenAdminVueBasicAt2020/vueRoot/dist"
+    <Directory "/opt/lampp/LumenAdminVueBasicAt2020/vueRoot/dist">
+        Options FollowSymLinks IncludesNOEXEC Indexes
+        DirectoryIndex index.html index.htm index.php
+        AllowOverride all
+        Order Deny,Allow
+        Allow from all
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
