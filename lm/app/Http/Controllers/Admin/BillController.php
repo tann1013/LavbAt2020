@@ -68,7 +68,21 @@ class BillController extends CController
             'page' => 'required|integer:min:1',
             'page_size' => 'required|in:10,20,30,50,100',
         ]);
+
         $result = $this->taskRy->findRows($page, $page_size);
         return $this->success($result);
+    }
+
+    public function addTask(Request $request){
+        $this->validate($request, [
+            'title' => 'required',
+            'addtime' => 'required',
+        ]);
+        //dd($request->all());
+        if($this->taskRy->setTask($request->all())){
+            return $this->success([], '添加成功...');
+        }else{
+            return $this->fail('添加失败...');
+        }
     }
 }

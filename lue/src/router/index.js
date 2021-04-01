@@ -7,6 +7,6 @@ import {
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',//hash,解决刷新后端报错问题， history
   routes: constantRouterMap
 });

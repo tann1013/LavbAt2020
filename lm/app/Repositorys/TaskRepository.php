@@ -73,9 +73,8 @@ class TaskRepository
      * @param array $data
      * @return int
      */
-    public function setBill(array $data){
+    public function setTask(array $data){
         unset($data['s']);
-        $data['uid'] = 101;
 
         $detail = $this->_getDetailByWhere(['addtime' => $data['addtime']]);
         if($detail){

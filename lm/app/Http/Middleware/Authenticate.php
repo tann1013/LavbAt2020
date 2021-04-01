@@ -26,8 +26,10 @@ class Authenticate
         'admin/auth/logout',
         'admin/jz',
 
-        //
-        'admin/bill/getList'
+        //扩展
+        'admin/bill/getList',
+        'admin/bill/addTask',
+        'admin/bill/getTaskList',
     ];
 
     /**

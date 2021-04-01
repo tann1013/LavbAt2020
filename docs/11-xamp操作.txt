@@ -39,6 +39,7 @@ https://sourceforge.net/projects/xampp/files/XAMPP%20Linux/7.4.13/xampp-linux-x6
 5，mysql的配置文件在：/opt/lampp/etc/my.cnf
 6，网站根目录在：/opt/lampp/htdocs/
 7，浏览器输入localhost后默认进入的目录是：/opt/lampp/htdocs/dashboard/
+
 ————————————————
 版权声明：本文为CSDN博主「释雨」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/smm188/article/details/75577535
@@ -52,6 +53,18 @@ rpm -qa|grep git
 yum install git
 
 curl
+
+
+     在命令行模式下，hjkl这四个按键就可以移动光标
+       h(左)
+       j(下)
+       k(上)
+       l(右)
+       x 删除
+
+用户名：cps
+计算机名称：sac100
+密码：SAC888
 
 
 四、本地项目推送到github
