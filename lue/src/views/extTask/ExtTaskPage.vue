@@ -72,16 +72,14 @@
 </template>
 
 <script>
-    import { ServeGetAdminTask, ServeDeleteRole } from '@/api/rbac'
-    //import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
-    //import CreateForm from './modules/EditRoleFrom'
-    //import GiveRolePrems from './modules/GiveRolePrems'
+    import { ServeGetAdminTask } from '@/api/rbac'
+    import { ServeGetRoles } from '@/api/rbac'
+    import CreateForm from './modules/EditTaskFrom'
 
     export default {
         name: 'SystemRolePageV2',
         components: {
-            //CreateForm,
-            //GiveRolePrems
+            CreateForm,
         },
 
         /*

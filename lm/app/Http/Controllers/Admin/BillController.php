@@ -76,7 +76,7 @@ class BillController extends CController
     public function addTask(Request $request){
         $this->validate($request, [
             'title' => 'required',
-            'addtime' => 'required',
+            'create_time' => 'required',
         ]);
         //dd($request->all());
         if($this->taskRy->setTask($request->all())){
@@ -85,4 +85,7 @@ class BillController extends CController
             return $this->fail('添加失败...');
         }
     }
+
+    //createTask、editTask
+
 }

@@ -76,7 +76,7 @@ class TaskRepository
     public function setTask(array $data){
         unset($data['s']);
 
-        $detail = $this->_getDetailByWhere(['addtime' => $data['addtime']]);
+        $detail = $this->_getDetailByWhere(['create_time' => $data['create_time']]);
         if($detail){
             return $this->_update($detail->id, $data);
         }else{

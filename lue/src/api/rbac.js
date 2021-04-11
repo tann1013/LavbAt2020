@@ -25,7 +25,11 @@ const api = {
 
   //新增获取账单接口
   get_admin_bill: 'admin/bill/getList',
-  get_admin_task: 'admin/bill/getTaskList'
+  //工作室订单模块
+  admin_task_get:    'admin/bill/getTaskList',
+  admin_task_create: 'admin/bill/addTask',
+  admin_task_edit:   'admin/bill/editTask',
+
 }
 
 /**
@@ -158,5 +162,11 @@ export function ServeGetAdminBill(data) {
  * @constructor
  */
 export function ServeGetAdminTask(data) {
-    return post(api.get_admin_task, data);
+    return post(api.admin_task_get, data);
+}
+export function ServeCreateTask(data) {
+    return post(api.admin_task_create, data);
+}
+export function ServeEditTask(data) {
+    return post(api.admin_task_create, data);
 }
