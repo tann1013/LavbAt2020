@@ -53,9 +53,9 @@
 
       <!-- 创建角色及编辑角色窗口 -->
       <create-form
-              ref="createModal"
-              :visible="createModal.visible"
-              :model="createModal.model"
+              ref="createBillModal"
+              :visible="createBillModal.visible"
+              :model="createBillModal.model"
               @cancel="handleCancel"
               @success="addSuccessCallback"
       />
@@ -73,15 +73,15 @@
 
 <script>
     import { ServeGetAdminBill, ServeDeleteRole } from '@/api/rbac'
-    //import { ServeGetRoles, ServeDeleteRole } from '@/api/rbac'
-    //import CreateForm from './modules/EditRoleFrom'
-    //import GiveRolePrems from './modules/GiveRolePrems'
+    import { ServeGetRoles} from '@/api/rbac'
+    import CreateForm from './modules/EditBillFrom'
+    import GiveRolePrems from './modules/GiveRolePrems'
 
     export default {
         name: 'SystemRolePageV2',
         components: {
-            //CreateForm,
-            //GiveRolePrems
+            CreateForm,
+            GiveRolePrems
         },
 
     //     `op_eat` int(2) DEFAULT NULL,
@@ -100,9 +100,6 @@
     // 收益
     // 读书
     // 跑步
-
-
-
         data() {
             return {
                 // 表格栏目
@@ -173,18 +170,6 @@
                         width: '9%',
                         align: 'center',
                     }
-                    /*
-                    ,
-                    {
-                        title: '操作',
-                        dataIndex: 'action',
-                        width: '50px',
-                        align: 'center',
-                        scopedSlots: {
-                            customRender: 'action'
-                        }
-                    }
-                    */
                 ],
 
                 // 查询参数
@@ -199,7 +184,7 @@
                 },
 
                 // 创建角色弹出层
-                createModal: {
+                createBillModal: {
                     model: null,
                     visible: false
                 },
@@ -219,15 +204,15 @@
 
             // 添加角色事件
             handleAddRole() {
-                this.$refs.createModal.form.resetFields()
-                this.createModal.visible = true
-                this.createModal.model = null
+                this.createBillModal.visible = true
+                this.createBillModal.model = null
             },
+
 
             // 编辑角色事件
             handleEditRole(record) {
-                this.createModal.visible = true
-                this.createModal.model = {
+                this.createBillModal.visible = true
+                this.createBillModal.model = {
                     description: record.description,
                     display_name: record.display_name,
                     id: record.id,
@@ -237,15 +222,15 @@
 
             // 添加角色成功回调事件
             addSuccessCallback() {
-                this.createModal.visible = false
+                this.createBillModal.visible = false
                 this.$refs.table.refresh(true)
-                this.$refs.createModal.form.resetFields()
+                this.$refs.createBillModal.form.resetFields()
             },
 
             // 编辑角色取消事件
             handleCancel() {
-                this.createModal.visible = false
-                this.$refs.createModal.form.resetFields()
+                this.createBillModal.visible = false
+                this.$refs.createBillModal.form.resetFields()
             },
 
             // 分配权限事件

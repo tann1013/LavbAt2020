@@ -1,0 +1,13 @@
+Please provide a valid cache path.
+
+解决方法如下：
+
+1、确保storage目录下有如app，framework，views三个目录。
+
+2、确保storage/framework目录下也有 cache，sessions，views 三个目录。
+
+缺少以上目录就手动创建，然后访问网站首页试试。
+
+sudo mkdir -p storage/framework/cache
+sudo mkdir -p storage/framework/sessions
+sudo mkdir -p storage/framework/views
