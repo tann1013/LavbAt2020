@@ -1,9 +1,11 @@
 
-
+方式一
 ssh root@139.155.28.78
-
-
 cd /opt/lampp/LumenAdminVueBasicAt2020/
+
+方式二（升级）
+ssh -t root@139.155.28.78 'cd /opt/lampp/LumenAdminVueBasicAt2020/;exec bash'
+
 
 
 1 yum install gcc gcc-c++

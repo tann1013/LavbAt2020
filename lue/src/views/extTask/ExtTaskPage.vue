@@ -99,19 +99,25 @@
                     {
                         title: '添加时间',
                         dataIndex: 'create_time',
-                        width: '5%',
+                        width: '15%',
                         align: 'center',
                     },
                     {
                         title: '任务名称',
                         dataIndex: 'title',
-                        width: '50%',
+                        width: '15%',
+                        align: 'center',
+                    },
+                    {
+                        title: '任务描述',
+                        dataIndex: 'title',
+                        width: '30%',
                         align: 'center',
                     },
                     {
                         title: '状态',
                         dataIndex: 'status',
-                        width: '5%',
+                        width: '10%',
                         align: 'center',
                     },
                     /*

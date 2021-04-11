@@ -76,6 +76,7 @@ class BillController extends CController
     public function addTask(Request $request){
         $this->validate($request, [
             'title' => 'required',
+            'content' => 'required',
             'create_time' => 'required',
         ]);
         //dd($request->all());

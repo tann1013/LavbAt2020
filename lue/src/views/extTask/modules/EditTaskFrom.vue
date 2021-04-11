@@ -20,6 +20,12 @@
                   v-decorator="['title', { rules: [{ required: true, message: '任务名称不能为空！' }] }]"
           />
         </a-form-item>
+        <a-form-item label="任务描述">
+          <a-input
+                  placeholder="请填写任务描述"
+                  v-decorator="['content', { rules: [{ required: true, message: '任务描述不能为空！' }] }]"
+          />
+        </a-form-item>
         <a-form-item label="发起时间">
           <a-input
                   placeholder="请填写发起时间"
