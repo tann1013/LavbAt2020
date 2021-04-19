@@ -150,28 +150,6 @@
       <a-button @click="handleOpenLoading" style="margin-right: 16px;">打开遮罩(5s 自动关闭)</a-button>
       <a-button @click="handleOpenLoadingCustomTip">打开遮罩(自定义提示语)</a-button>
     </a-card>
-
-
-    <!-- 扩展部分 at_2021-4-19-->
-    <div>
-      <a-card :bordered="false" class="mt-5" title="EXT日期选择相关">
-        <a-date-picker @change="onChange" />
-        <br />
-        <br />
-        <a-month-picker placeholder="Select month" @change="onChange" />
-        <br />
-        <br />
-        <a-range-picker @change="onChange" />
-        <br />
-        <br />
-        <a-week-picker placeholder="Select week" @change="onChange" />
-      </a-card>
-
-      <a-card :bordered="false" class="mt-5" title="EXT其他...">
-      </a-card>
-      <!-- 扩展部分 at_2021-4-19-->
-    </div>
-
   </div>
 </template>
 
