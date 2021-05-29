@@ -1,0 +1,79 @@
+
+deployer
+什么是Deployer
+Deployer 是一个基于 SSH 协议的无侵入 web 项目部署工具，因为它不需要你在目标服务器上装什么服务之类的东西即可使用，它只需要在你的开发机，或者你的笔记本，就是发起部署动作的一方安装即可。
+
+它的原理就是通过 SSH 到你的机器去创建目录，移动文件，执行指定的动作来完成项目的部署
+
+跟我们shell脚本其实是一样的，只不过，我们不需要去服务器上面进行操作，而且在本地恋用熟悉的php进行编写部署脚本后，通过ssh协议，登录到指定服务器进行一系列操作，所以说还是很友好的。
+————————————————
+版权声明：本文为CSDN博主「shisiying」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/seven_2016/article/details/83628778
+
+
+1 centos安装
+curl -LO https://deployer.org/deployer.phar
+mv deployer.phar /usr/local/bin/dep
+chmod +x /usr/local/bin/dep
+
+
+
+2 dep init
+
+[root@VM-16-5-centos ~]# dep init
+
+
+  Welcome to the Deployer config generator
+
+
+
+ This utility will walk you through creating a deploy.php file.
+ It only covers the most common items, and tries to guess sensible defaults.
+
+ Press ^C at any time to quit.
+
+ Please select your project type [Common]:
+  [0 ] Common
+  [1 ] Laravel
+  [2 ] Symfony
+  [3 ] Yii
+  [4 ] Yii2 Basic App
+  [5 ] Yii2 Advanced App
+  [6 ] Zend Framework
+  [7 ] CakePHP
+  [8 ] CodeIgniter
+  [9 ] Drupal
+  [10] TYPO3
+ > 1
+
+ Repository []:
+ > https://github.com/tann1013/LavbAt2020.git
+
+ Contribute to the Deployer Development
+
+ In order to help development and improve the features in Deployer,
+ Deployer has a setting for usage data collection. This function
+ collects anonymous usage data and sends it to Deployer. The data is
+ used in Deployer development to get reliable statistics on which
+ features are used (or not used). The information is not traceable
+ to any individual or organization. Participation is voluntary,
+ and you can change your mind at any time.
+
+ Anonymous usage data contains Deployer version, php version, os type,
+ name of the command being executed and whether it was successful or not,
+ exception class name, count of hosts and anonymized project hash.
+
+ If you would like to allow us to gather this information and help
+ us develop a better tool, please add the code below.
+
+     set('allow_anonymous_stats', true);
+
+ This function will not affect the performance of Deployer as
+ the data is insignificant and transmitted in a separate process.
+
+ Do you confirm? (yes/no) [yes]:
+ > yes
+
+Successfully created: /root/deploy.php
+
+

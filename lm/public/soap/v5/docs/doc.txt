@@ -1,0 +1,15 @@
+php接口 生成 .wsdl文件
+
+
+1 运行creat.php 生成SERVER.wsdl
+
+2 更改生成的.wsdl中<port>部分soap:address的location
+<port name="..." binding="..." ><soap:address location="http://127.0.0.1/wsdl/creat.php"></port>
+->
+<port name="..." binding="..." ><soap:address location="http://127.0.0.1/wsdl/SERVER.php"></port>
+
+3 测试
+test.php
+————————————————
+版权声明：本文为CSDN博主「糟糕的沙漠」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_42412237/article/details/110713479

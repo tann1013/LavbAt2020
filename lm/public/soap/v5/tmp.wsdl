@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<definitions name="SERVER" targetNamespace="urn:SERVER"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:tns="urn:SERVER"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+    <types
+            xmlns="http://schemas.xmlsoap.org/wsdl/" />
+    <portType name="SERVERPort">
+        <operation name="HelloWorld">
+            <input message="tns:HelloWorldRequest" />
+            <output message="tns:HelloWorldResponse" />
+        </operation>
+    </portType>
+    <binding name="SERVERBinding" type="tns:SERVERPort">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+        <operation name="HelloWorld">
+            <soap:operation soapAction="urn:SERVER#SERVER#HelloWorld" />
+            <input>
+                <soap:body use="encoded" namespace="urn:SERVER" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="urn:SERVER" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+            </output>
+        </operation>
+    </binding>
+    <service name="SERVER">
+        <documentation />
+        <port name="SERVERPort" binding="tns:SERVERBinding">
+            <soap:address location="http://hd2.com:80/tmp/v5/creat.php" />
+        </port>
+    </service>
+    <message name="HelloWorldRequest"></message>
+    <message name="HelloWorldResponse">
+        <part name="HelloWorld" type="xsd:string" />
+    </message>
+</definitions>

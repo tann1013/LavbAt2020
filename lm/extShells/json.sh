@@ -1,5 +1,6 @@
 #!/bin/bash
-#>>>>>>>>>>每五分钟生成json文件，如pointlist_20210309140554110.json
+#功能说明：每五分钟生成json文件，如pointlist_20210309140554110.json
+#crontab设置： */30 * * * * sh /opt/lampp/LumenAdminVueBasicAt2020/lm/extShells/json.sh >> /dev/null 2>&1
 #1 设置路径配置
 #线上
 #BASE_PATH=/opt/lampp/LumenAdminVueBasicAt2020
