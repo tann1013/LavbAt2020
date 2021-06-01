@@ -9,11 +9,11 @@ try{
     echo "</pre>";
 
 //1 wsdl文件为：SERVER.wsdl的方法
-//echo $soap->HelloWorld();
+echo $soap->HelloWorld();
 
 
 //2 wsdl文件为：dataAccessService.wsdl的方法
-    echo $soap->dataReply();
+    //echo $soap->dataReply();
 
 }catch (Exception $e){
     var_dump($e->getMessage());die;
