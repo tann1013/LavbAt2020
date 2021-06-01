@@ -68,7 +68,7 @@ $config = array(
     <div class="cell" style="background: #1abc9c">
         <div class="title">①收益备注</div>
         <div class="content">
-            <input type="text" class="input" name="op_today_profit_notes" placeholder="收益备注（理财或其他）"/>
+            <input type="text" class="input" name="op_today_profit_notes" placeholder="收益备注（理财或顺风车等）" value="顺风车"/>
         </div>
     </div>
     <div class="cell" style="background: #1abc9c">
@@ -76,14 +76,18 @@ $config = array(
         <div class="content"><input type="text" class="input" name="op_today_reading"/></div>
     </div>
     <div class="cell" style="background: #1abc9c">
-        <div class="title">③跑步/km</div>
+        <div class="title">③Runiing/km</div>
         <div class="content"><input type="text" class="input" name="op_today_running"/></div>
     </div>
     <div class="cell" style="background: #1abc9c">
-        <div class="title">④工资/￥</div>
+        <div class="title">④Situp/个</div>
+        <div class="content"><input type="text" class="input" name="op_today_situp"/></div>
+    </div>
+    <div class="cell" style="background: #b0413e">
+        <div class="title">①工资/￥</div>
         <div class="content"><input type="text" class="input" name="every_month_wages" placeholder="发工资再填写"/></div>
     </div>
-    <div class="cell" style="background: #1abc9c">
+    <div class="cell" style="background: cadetblue">
         <div class="title"><button style="height: 50px;font-size:30px;color:white;width: 100%;background: steelblue">历史</button></div>
         <div class="content"><input type="submit" value="提交当天数据" style="height: 50px;font-size:30px;color:white;width: 100%;color: black;background: cornflowerblue"></div>
     </div>
