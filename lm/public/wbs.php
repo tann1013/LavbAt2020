@@ -12,8 +12,6 @@ class SERVER{
     }
 }
 
-
-
 $objSoapServer = new SoapServer("SERVER.wsdl");
 $objSoapServer->setClass("SERVER");//注册类,SERVER
 $objSoapServer->handle();
