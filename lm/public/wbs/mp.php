@@ -53,6 +53,7 @@ EOT;
 
 
 try{
+    header("Content-Type: text/html;charset=utf-8");
     _writeLog('start...');
 
     //1 定义类
