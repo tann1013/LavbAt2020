@@ -6,16 +6,50 @@
 const KUNSHI_REC_URL = 'http://hd2.com/wbs/SERVER.php?wsdl';
 
 function _writeLog($content){
+    date_default_timezone_set('PRC');
 //    $path =  __DIR__ . '/wbs-'.date('Y-m-d').'.log';
     $path = __DIR__ . '/wbs.log';
     file_put_contents($path, ''.date('Y-m-d H:i:s', time()).' '.$content.PHP_EOL, FILE_APPEND);
 }
 
+
+function _getToKsJsons(){
+    $jsonFileLocalTpl = '/Users/tanjian/web/woniuStudioProjects/LavbAt2020/lm/public/wbs/to_ks_jsons/pointlist_20210621013343.json';
+
+    $handler   = fopen($jsonFileLocalTpl, 'r+b');
+    $file_size = filesize($jsonFileLocalTpl);
+    $jsonStr   =  fread($handler,$file_size);
+    return $jsonStr;
+}
+
 /**
  * @param $reqId
  */
-function _sendJsonData2ks(){
+function _sendJsonData2ks($replyId){
+    $replyId = $replyId;
+    $replyData = _getToKsJsons();
 
+    /**
+     * 1 配置
+     */
+    $withXml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><soapenv:Body><ns1:dataReq soapenv:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:ns1=\"http://tempuri.org/\"><ns1:arg0 xsi:type=\"soapenc:string\" xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\"><?xml version=\"1.0\" encoding=\"UTF-8\"?><replyDataMsg><replyId>$replyId</replyId><facName>hd</facName><replyFlag>1</replyFlag><replyData>$replyData</replyData></replyDataMsg></ns1:arg0></ns1:dataReq></soapenv:Body></soapenv:Envelope>";
+    /**
+     * 2 实例化
+     */
+    $wsdlUrl = KUNSHI_REC_URL;
+    //ini_set('soap.wsdl_cache_enabled','0');
+    $soap = new \SoapClient($wsdlUrl);
+    //2.1 携带xml(ok)
+    $response = $soap->__doRequest($withXml, $wsdlUrl, 'getAlogpsResults',1,0);//发送xml必须使用__doRequest
+
+    //3 判断是否成功
+    //var_dump($response);die;
+}
+
+/**
+ * @param $reqId
+ */
+function _sendJsonData2ksBak(){
     /**
      * 1 配置
      */
@@ -101,8 +135,8 @@ try{
         /**
          * 3 给坤时返回数据
          */
-        _sendJsonData2ks();
-
+        _sendJsonData2ks($reqId);
+        //_getToKsJsons();
 
     }
 }catch (Exception $e){
