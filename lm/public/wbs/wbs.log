@@ -609,3 +609,223 @@
     </soapenv:Body>
 </soapenv:Envelope>
 2021-06-21 12:59:06 $reqId=2021062100000059
+2021-06-21 13:00:50 开始处理坤时的请求...
+2021-06-21 13:00:50 --坤时请求withXml数据--
+2021-06-21 13:00:50 
+2021-06-21 13:00:50 $reqId=
+2021-06-21 13:00:50 开始处理坤时的请求...
+2021-06-21 13:00:50 --坤时请求withXml数据--
+2021-06-21 13:00:50 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000060</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:00:50 $reqId=2021062100000060
+2021-06-21 13:05:42 开始处理坤时的请求...
+2021-06-21 13:05:42 --坤时请求withXml数据--
+2021-06-21 13:05:42 
+2021-06-21 13:05:42 $reqId=
+2021-06-21 13:05:42 开始处理坤时的请求...
+2021-06-21 13:05:42 --坤时请求withXml数据--
+2021-06-21 13:05:42 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000061</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:05:42 $reqId=2021062100000061
+2021-06-21 13:06:31 开始处理坤时的请求...
+2021-06-21 13:06:31 --坤时请求withXml数据--
+2021-06-21 13:06:31 
+2021-06-21 13:06:31 $reqId=
+2021-06-21 13:06:31 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Start tag expected, '<' not found
+
+2021-06-21 13:08:24 开始处理坤时的请求...
+2021-06-21 13:08:24 --坤时请求withXml数据--
+2021-06-21 13:08:24 
+2021-06-21 13:08:24 $reqId=
+2021-06-21 13:08:25 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : failed to load external entity "http://hd2.com/wbs/SERVER.php"
+
+2021-06-21 13:12:13 开始处理坤时的请求...
+2021-06-21 13:12:13 --坤时请求withXml数据--
+2021-06-21 13:12:13 
+2021-06-21 13:12:13 $reqId=
+2021-06-21 13:12:13 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Document is empty
+
+2021-06-21 13:13:18 开始处理坤时的请求...
+2021-06-21 13:13:18 --坤时请求withXml数据--
+2021-06-21 13:13:18 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000063</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:13:18 $reqId=2021062100000063
+2021-06-21 13:13:18 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Document is empty
+
+2021-06-21 13:14:31 开始处理坤时的请求...
+2021-06-21 13:14:31 --坤时请求withXml数据--
+2021-06-21 13:14:31 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000064</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:14:31 $reqId=2021062100000064
+2021-06-21 13:14:31 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Document is empty
+
+2021-06-21 13:15:41 开始处理坤时的请求...
+2021-06-21 13:15:41 --坤时请求withXml数据--
+2021-06-21 13:15:41 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000065</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:15:41 $reqId=2021062100000065
+2021-06-21 13:15:41 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Document is empty
+
+2021-06-21 13:15:48 开始处理坤时的请求...
+2021-06-21 13:15:48 --坤时请求withXml数据--
+2021-06-21 13:15:48 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000066</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:15:48 $reqId=2021062100000066
+2021-06-21 13:15:48 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Document is empty
+
+2021-06-21 13:16:46 开始处理坤时的请求...
+2021-06-21 13:16:46 --坤时请求withXml数据--
+2021-06-21 13:16:46 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000067</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:16:46 $reqId=2021062100000067
+2021-06-21 13:16:46 SOAP-ERROR: Parsing WSDL: Couldn't load from 'http://hd2.com/wbs/SERVER.php' : Document is empty
+
+2021-06-21 13:21:19 开始处理坤时的请求...
+2021-06-21 13:21:19 --坤时请求withXml数据--
+2021-06-21 13:21:19 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062100000068</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-21 13:21:19 $reqId=2021062100000068
