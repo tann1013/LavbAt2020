@@ -14,7 +14,7 @@ function _writeLog($content){
 
 
 function _getToKsJsons(){
-    $jsonFileLocalTpl = '/Users/tanjian/web/woniuStudioProjects/LavbAt2020/lm/public/wbs/to_ks_jsons/pointlist_20210621013343.json';
+    $jsonFileLocalTpl = '/Users/tanjian/web/woniuStudioProjects/LavbAt2020/lm/public/wbs/to_ks_jsons/pointlist_20210615044346.json';
 
     $handler   = fopen($jsonFileLocalTpl, 'r+b');
     $file_size = filesize($jsonFileLocalTpl);
@@ -82,7 +82,7 @@ function _stepGetReqId($xmlStrem){
     $replyId = isset($prs_id[1][0]) ? $prs_id[1][0] : '';
 
     if(empty($replyId)){
-        //_writeLog('本次未解析到$replyId！');
+        _writeLog('本次未解析到$replyId！');
     }
 
     return $replyId;
