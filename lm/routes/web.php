@@ -49,4 +49,5 @@ $router->get('/admini', function () use ($router) {
 
 $router->get('/chart', 'EchartController@module');
 
-
+//新增工具也
+$router->get('/tools', 'ToolsController@tools');

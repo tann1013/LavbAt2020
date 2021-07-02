@@ -1383,3 +1383,770 @@
     </soapenv:Body>
 </soapenv:Envelope>
 2021-06-22 09:42:34 $reqId=2021062200000026
+2021-06-22 09:47:36 开始处理坤时的请求...
+2021-06-22 09:47:36 --坤时请求withXml数据--
+2021-06-22 09:47:36 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000027</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 09:47:36 $reqId=2021062200000027
+2021-06-22 10:16:10 开始处理坤时的请求...
+2021-06-22 10:16:10 --坤时请求withXml数据--
+2021-06-22 10:16:10 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000028</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 10:16:10 $reqId=2021062200000028
+2021-06-22 10:16:48 开始处理坤时的请求...
+2021-06-22 10:16:48 --坤时请求withXml数据--
+2021-06-22 10:16:48 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000029</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 10:16:48 $reqId=2021062200000029
+2021-06-22 10:17:42 开始处理坤时的请求...
+2021-06-22 10:17:42 --坤时请求withXml数据--
+2021-06-22 10:17:42 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000030</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 10:17:42 $reqId=2021062200000030
+2021-06-22 10:21:58 开始处理坤时的请求...
+2021-06-22 10:21:58 --坤时请求withXml数据--
+2021-06-22 10:21:58 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000031</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 10:21:58 $reqId=2021062200000031
+2021-06-22 10:24:09 开始处理坤时的请求...
+2021-06-22 10:24:09 --坤时请求withXml数据--
+2021-06-22 10:24:09 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000032</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 10:24:09 $reqId=2021062200000032
+2021-06-22 11:40:21 开始处理坤时的请求...
+2021-06-22 11:40:21 --坤时请求withXml数据--
+2021-06-22 11:40:21 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000034</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 11:40:21 $reqId=2021062200000034
+2021-06-22 13:10:55 开始处理坤时的请求...
+2021-06-22 13:10:55 --坤时请求withXml数据--
+2021-06-22 13:10:55 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000035</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 13:10:55 $reqId=2021062200000035
+2021-06-22 13:51:54 开始处理坤时的请求...
+2021-06-22 13:51:54 --坤时请求withXml数据--
+2021-06-22 13:51:54 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000036</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 13:51:54 $reqId=2021062200000036
+2021-06-22 14:11:01 开始处理坤时的请求...
+2021-06-22 14:11:01 --坤时请求withXml数据--
+2021-06-22 14:11:01 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000037</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 14:11:01 $reqId=2021062200000037
+2021-06-22 15:25:28 开始处理坤时的请求...
+2021-06-22 15:25:28 --坤时请求withXml数据--
+2021-06-22 15:25:28 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000038</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 15:25:28 $reqId=2021062200000038
+2021-06-22 15:30:18 开始处理坤时的请求...
+2021-06-22 15:30:18 --坤时请求withXml数据--
+2021-06-22 15:30:18 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000039</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 15:30:18 $reqId=2021062200000039
+2021-06-22 19:43:14 开始处理坤时的请求...
+2021-06-22 19:43:14 --坤时请求withXml数据--
+2021-06-22 19:43:14 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000040</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 19:43:14 $reqId=2021062200000040
+2021-06-22 20:12:29 开始处理坤时的请求...
+2021-06-22 20:12:29 --坤时请求withXml数据--
+2021-06-22 20:12:29 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000041</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 20:12:29 $reqId=2021062200000041
+2021-06-22 21:05:01 开始处理坤时的请求...
+2021-06-22 21:05:01 --坤时请求withXml数据--
+2021-06-22 21:05:01 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062200000043</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-22 21:05:01 $reqId=2021062200000043
+2021-06-23 09:14:52 开始处理坤时的请求...
+2021-06-23 09:14:52 --坤时请求withXml数据--
+2021-06-23 09:14:52 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000001</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:14:52 $reqId=2021062300000001
+2021-06-23 09:32:17 开始处理坤时的请求...
+2021-06-23 09:32:17 --坤时请求withXml数据--
+2021-06-23 09:32:17 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000002</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:32:17 $reqId=2021062300000002
+2021-06-23 09:33:41 开始处理坤时的请求...
+2021-06-23 09:33:41 --坤时请求withXml数据--
+2021-06-23 09:33:41 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000003</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:33:41 $reqId=2021062300000003
+2021-06-23 09:41:20 开始处理坤时的请求...
+2021-06-23 09:41:20 --坤时请求withXml数据--
+2021-06-23 09:41:20 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000004</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:41:20 $reqId=2021062300000004
+2021-06-23 09:43:43 开始处理坤时的请求...
+2021-06-23 09:43:43 --坤时请求withXml数据--
+2021-06-23 09:43:43 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000005</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:43:43 $reqId=2021062300000005
+2021-06-23 09:51:43 开始处理坤时的请求...
+2021-06-23 09:51:43 --坤时请求withXml数据--
+2021-06-23 09:51:43 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000006</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:51:43 $reqId=2021062300000006
+2021-06-23 09:53:05 开始处理坤时的请求...
+2021-06-23 09:53:05 --坤时请求withXml数据--
+2021-06-23 09:53:05 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000007</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:53:05 $reqId=2021062300000007
+2021-06-23 09:54:15 开始处理坤时的请求...
+2021-06-23 09:54:15 --坤时请求withXml数据--
+2021-06-23 09:54:15 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000008</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:54:15 $reqId=2021062300000008
+2021-06-23 09:57:16 开始处理坤时的请求...
+2021-06-23 09:57:16 --坤时请求withXml数据--
+2021-06-23 09:57:16 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000009</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:57:16 $reqId=2021062300000009
+2021-06-23 09:58:04 开始处理坤时的请求...
+2021-06-23 09:58:04 --坤时请求withXml数据--
+2021-06-23 09:58:04 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000010</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:58:04 $reqId=2021062300000010
+2021-06-23 09:59:22 开始处理坤时的请求...
+2021-06-23 09:59:22 --坤时请求withXml数据--
+2021-06-23 09:59:22 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000011</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 09:59:22 $reqId=2021062300000011
+2021-06-23 09:59:34 $response:"\u5df2\u5b8c\u6210\u672c\u6b21\u89e3\u6790\u548c\u5165\u5e93\u4efb\u52a1\uff01"
+2021-06-23 20:35:41 开始处理坤时的请求...
+2021-06-23 20:35:41 --坤时请求withXml数据--
+2021-06-23 20:35:41 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000012</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 20:35:41 $reqId=2021062300000012
+2021-06-23 20:36:41 $response:null
+2021-06-23 20:59:01 开始处理坤时的请求...
+2021-06-23 20:59:01 --坤时请求withXml数据--
+2021-06-23 20:59:01 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000013</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 20:59:01 $reqId=2021062300000013
+2021-06-23 20:59:15 $response:"<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n\u5df2\u5b8c\u6210\u672c\u6b21\u89e3\u6790\u548c\u5165\u5e93\u4efb\u52a1\uff01"
+2021-06-23 20:59:34 开始处理坤时的请求...
+2021-06-23 20:59:34 --坤时请求withXml数据--
+2021-06-23 20:59:34 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062300000014</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-23 20:59:34 $reqId=2021062300000014
+2021-06-23 20:59:48 $response:"<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n\u5df2\u5b8c\u6210\u672c\u6b21\u89e3\u6790\u548c\u5165\u5e93\u4efb\u52a1\uff01"
+2021-06-25 14:31:23 开始处理坤时的请求...
+2021-06-25 14:31:23 --坤时请求withXml数据--
+2021-06-25 14:31:23 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062500000001</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-25 14:31:23 $reqId=2021062500000001
+2021-06-25 14:31:38 $response:"<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n\u5df2\u5b8c\u6210\u672c\u6b21\u89e3\u6790\u548c\u5165\u5e93\u4efb\u52a1\uff01"
+2021-06-25 14:34:45 开始处理坤时的请求...
+2021-06-25 14:34:45 --坤时请求withXml数据--
+2021-06-25 14:34:45 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062500000002</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-25 14:34:45 $reqId=2021062500000002
+2021-06-25 14:34:59 $response:"<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n<br \/>\n<b>Warning<\/b>:  file_put_contents(\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/..\/..\/syncDcs\/logs\/wbs.log): failed to open stream: Permission denied in <b>\/Users\/tanjian\/web\/kunshi_projects\/huadian\/app\/Services\/SoapLog.php<\/b> on line <b>17<\/b><br \/>\n\u5df2\u5b8c\u6210\u672c\u6b21\u89e3\u6790\u548c\u5165\u5e93\u4efb\u52a1\uff01"
+2021-06-25 14:35:47 开始处理坤时的请求...
+2021-06-25 14:35:47 --坤时请求withXml数据--
+2021-06-25 14:35:47 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062500000003</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-25 14:35:47 $reqId=2021062500000003
+2021-06-25 14:36:47 $response:null
+2021-06-26 15:22:40 开始处理坤时的请求...
+2021-06-26 15:22:40 --坤时请求withXml数据--
+2021-06-26 15:22:40 <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Body>
+        <ns1:dataReq soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+            xmlns:ns1="http://tempuri.org/">
+            <ns1:arg0 xsi:type="soapenc:string"
+                xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+			<?xml version="1.0" encoding="UTF-8"?>
+				<reqRcvMsg>
+					<reqId>2021062600000001</reqId>
+					<facName>ks</facName>
+					<reqData>1</reqData>
+				</reqRcvMsg>
+            </ns1:arg0>
+        </ns1:dataReq>
+    </soapenv:Body>
+</soapenv:Envelope>
+2021-06-26 15:22:40 $reqId=2021062600000001
+2021-06-26 15:23:40 $response:null

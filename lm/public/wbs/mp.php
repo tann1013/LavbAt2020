@@ -43,7 +43,7 @@ function _sendJsonData2ks($replyId){
     $response = $soap->__doRequest($withXml, $wsdlUrl, 'getAlogpsResults',1,0);//发送xml必须使用__doRequest
 
     //3 判断是否成功
-    //var_dump($response);die;
+    _writeLog('$response:'.json_encode($response));
 }
 
 /**

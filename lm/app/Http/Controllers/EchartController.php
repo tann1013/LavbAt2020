@@ -28,7 +28,6 @@ class EchartController extends Controller
         return view('moduleIndex', ['echartOption' => $echartOption]);
     }
 
-
     /**
      *单个条形图
      *
