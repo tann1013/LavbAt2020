@@ -3,45 +3,70 @@ namespace App\Http\Controllers;
 
 
 
+use App\Helpers\Excel;
+use App\Http\Controllers\Admin\BillController;
+use App\Imports\ImportForReportAnquanCheck;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ToolsController extends Controller
 {
+
     public function tools(Request $request){
-        if($_SERVER['REQUEST_METHOD']=='POST'){
-            //解析Excel且入库
-            //1 inputs
-            if(!$request->hasFile('excel')) {
-                return $this->fail('请上传Excel附件！');
-            }
-            //2 logic
-
-            $path = $request->file('excel');
-            $res = $this->_doImport($path);
-            if($res['code']<0){
-                return $this->fail($res['msg']);
-            }
-
-            //3 response
-            return $this->success(true, '导入成功！');
-
-
-
-
-        }else{
-            return view('tools', []);
-        }
+        return view('tools', []);
     }
+
+    public function toolsHandle(Request $request){
+        //解析Excel且入库
+
+        //1 inputs
+        if(!$request->hasFile('excel')) {
+            return $this->fail('please upload Excel！');
+        }
+        //2 logic
+        $path = $request->file('excel');
+
+        $userArr = [];
+        //@TODO 导入Excel
+        //方式1
+        //Excel::import(new ImportForReportAnquanCheck($userArr), $path);
+        //方式2
+        $excelArr = Excel::import($path);
+        //2 处理数据
+        if($excelArr){
+            unset($excelArr[1]);
+            unset($excelArr[2]);
+            foreach ($excelArr as $itArr){
+                $handleItem = [];
+                $tableMapps = BillController::TABLE_MAPPS;
+                $mapps = array_keys($tableMapps);
+                foreach ($itArr as $k=>$v){
+                    $setKey = $mapps[$k];
+                    $handleItem[$setKey] = trim($v);
+                }
+
+
+                $handleItem['addtime'] = date('Y-m-d',($handleItem['addtime']-25569)*24*3600);
+
+                DB::table('bage_bill')->insertGetId($handleItem);
+            }
+        }
+
+
+        //3 response
+        return $this->success(true, '导入成功！');
+    }
+
+
 
     /**
      * @param $userArr
      * @param $path
      * @return bool
      */
-    private function _doImport($userArr, $path){
+    private function _doImport($path){
         try{
-            \Maatwebsite\Excel\Facades\Excel::import(new ImportForReportAnquanCheck($userArr), $path);
-
+            //
         }catch (\Exception $e){
             return array('code'=>-1,'msg'=>$e->getMessage());
         }

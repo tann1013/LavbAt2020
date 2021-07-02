@@ -51,3 +51,4 @@ $router->get('/chart', 'EchartController@module');
 
 //新增工具也
 $router->get('/tools', 'ToolsController@tools');
+$router->post('/toolsHandle', 'ToolsController@toolsHandle');

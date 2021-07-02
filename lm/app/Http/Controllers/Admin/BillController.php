@@ -15,6 +15,18 @@ use Illuminate\Http\Request;
 
 class BillController extends CController
 {
+    const TABLE_MAPPS = [
+        'addtime' => '日期',
+        'op_eat' => '吃',
+        'op_traffic' => '交通',
+        'op_other' => '其他',
+        'op_other_notes' => '其他备注',
+        'op_today_profit' => '收益',
+        'op_today_reading' => '收益备注',
+        'op_today_running' => '读书',
+        'every_month_wages' => '跑步',
+        'op_today_profit_notes' => 'situp',
+    ];
 
     public function __construct(BillRepository $billRepository)
     {
