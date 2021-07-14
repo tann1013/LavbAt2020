@@ -506,3 +506,23 @@ if (!function_exists('postPageSimple')) {
         return $result;
     }
 }
+
+/**
+ * 数组arr按照zm分组
+ * $arr = array(
+ * [ 'zm' => 'AD',  'name' => '奥迪A4L'],
+ * [ 'zm' => 'FLL', 'name' => '法拉利511'],
+ * [ 'zm' => 'FLL', 'name' => '法拉利911']
+ * );
+ */
+if (!function_exists('_arrayGroupByCellKey')) {
+    function _arrayGroupByCellKey($arr, $pickKey)
+    {
+        $result = array();
+        foreach ($arr as $k => $v) {
+            $v = (array) $v;
+            $result[$v[$pickKey]][] = $v;
+        }
+        return $result;
+    }
+}

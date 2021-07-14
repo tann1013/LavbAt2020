@@ -65,8 +65,41 @@ class BillController extends CController
             'page_size' => 'required|in:10,20,30,50,100',
         ]);
         $result = $this->billRepository->findAllBills($page, $page_size);
+        $result = $this->_formatGetList($result);
         return $this->success($result);
     }
+
+    private function _formatGetList($result){
+        $newRows = [];
+        if($rows = $result['rows']){
+            $rowsGroupByAddM = _arrayGroupByCellKey($rows, 'add_month');
+            //dd($rowsGroupByAddM);
+            foreach ($rowsGroupByAddM as $keyM => $item){
+                //1 monthData
+                $thisMonthData = [
+                    "id" => time(),
+                    "op_eat" => '',
+                    "op_traffic" => '',
+                    "op_other" => '',
+                    "op_other_notes" => '记录月份为~'.$keyM,
+                    "total" => '',
+                    "op_today_profit" => '',
+                    "op_today_profit_notes" => '',
+                    "op_today_reading" => '',
+                    "op_today_running" => '',
+                    "addtime" => '',
+                    "add_month" => '',
+                ];
+                //合并
+                $thisRow = array_merge([$thisMonthData], $item);
+                $newRows = array_merge($newRows, $thisRow);
+
+            }
+            $result['rows'] = $newRows;
+        }
+        return $result;
+    }
+
 
     /**
      * @param Request $request

@@ -59,7 +59,8 @@ class BillRepository
             'op_today_profit_notes',
             'op_today_reading',
             'op_today_running',
-            'addtime'
+            'addtime',
+            'add_month'
         ];
         $rowObj = BillModel::select($columsArr);
         $total = $rowObj->count();
@@ -94,6 +95,8 @@ class BillRepository
     public function setBill(array $data){
         unset($data['s']);
         $data['uid'] = 101;
+        $data['add_month'] = date('Y-m', time());
+
         $detail = $this->_getDetailByWhere(['addtime' => $data['addtime']]);
         if($detail){
             return $this->_update($detail->id, $data);
