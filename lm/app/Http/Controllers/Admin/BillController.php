@@ -95,8 +95,7 @@ class BillController extends CController
         $num = $thisMonthDays - $jlDays;
         return $num;
     }
-
-
+    
     private function _formatGetList($result){
         $newRows = [];
         if($rows = $result['rows']){
