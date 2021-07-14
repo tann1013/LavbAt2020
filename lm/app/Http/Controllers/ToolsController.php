@@ -45,10 +45,11 @@ class ToolsController extends Controller
                     $handleItem[$setKey] = trim($v);
                 }
 
+                $theExcelDate = ($handleItem['addtime']-25569)*24*3600;
 
-                $handleItem['addtime'] = date('Y-m-d',($handleItem['addtime']-25569)*24*3600);
+                $handleItem['addtime'] = date('Y-m-d', $theExcelDate);
                 //特殊处理
-                $handleItem['add_month'] = date('Y-m',($handleItem['addtime']-25569)*24*3600);
+                $handleItem['add_month'] = date('Y-m', $theExcelDate);
                 $handleItem['uid'] = 110;//导入
                 $handleItem['total'] =(float) $handleItem['op_eat']+(float) $handleItem['op_traffic']+(float) $handleItem['op_other'];
 
