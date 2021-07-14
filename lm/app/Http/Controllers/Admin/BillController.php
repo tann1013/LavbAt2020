@@ -92,7 +92,7 @@ class BillController extends CController
                     "op_eat" => '',
                     "op_traffic" => '',
                     "op_other" => '',
-                    "op_other_notes" => '记录月份为：'.$keyM.'（本月漏记10天）。',
+                    "op_other_notes" => '记录为'.$keyM.'（已漏记10天）。',
                     "total" => '',
                     "op_today_profit" => '',
                     "op_today_profit_notes" => '',
