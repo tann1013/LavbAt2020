@@ -69,12 +69,23 @@ class BillController extends CController
         return $this->success($result);
     }
 
+
+    private function _addStrForItem(& $item){
+        foreach ($item as &$it){
+            $it['total'] = '-'.$it['total'];
+            $it['op_today_profit'] = '+'.$it['op_today_profit'];
+        }
+    }
+
     private function _formatGetList($result){
         $newRows = [];
         if($rows = $result['rows']){
             $rowsGroupByAddM = _arrayGroupByCellKey($rows, 'add_month');
             //dd($rowsGroupByAddM);
             foreach ($rowsGroupByAddM as $keyM => $item){
+                //增加+-符号
+                $this->_addStrForItem($item);
+
                 //1 monthData
                 $thisMonthData = [
                     "id" => time(),
