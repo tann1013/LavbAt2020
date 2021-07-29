@@ -1,0 +1,15 @@
+一、目录说明
+tree -L 1
+├── README.en.md
+├── README.md
+├── app.js
+├── app.json
+├── app.wxss
+├── assets
+├── pages
+├── project.config.json
+├── sitemap.json
+└── utils
+
+3 directories, 7 files
+
