@@ -1,0 +1,21 @@
+
+1 问题描述：
+http://admini.17logs.com/css/app.49a89b3d.css
+
+找不到对象！
+您请求的 URL 在该服务器上未找到。 如果您是手动输入的 URL ，请检查拼写并重试。
+
+如果您认为这是一个服务器错误，请联系网站管理员。
+
+Error 404
+admini.17logs.com
+Apache/2.4.46 (Unix) OpenSSL/1.1.1h PHP/7.4.13 mod_perl/2.0.11 Perl/v5.32.0
+
+
+本地就是好的
+http://admindev2.com/css/app.49a89b3d.css
+.ant-pro-drop-down[data-v-757f7dc6] .action{margin-right:8px}.ant-pro-drop-down[data-v-757f7dc6]
+
+2 解决办法
+参看说明1
+
