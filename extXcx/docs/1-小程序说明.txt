@@ -1,15 +1,23 @@
 一、目录说明
-tree -L 1
-├── README.en.md
-├── README.md
-├── app.js
-├── app.json
-├── app.wxss
-├── assets
-├── pages
+tree -L 2
+├── app.js --   主脚本逻辑
+├── app.json -- 主配置
+├── app.wxss -- 全局CSS
+├── assets -- 图片资源
+│   └── img
+├── pages  -- 页面部分
+    ├── article -- HTML下的文章类
+    │   ├── article.js   -- JS
+    │   ├── article.json -- 配置
+    │   ├── article.wxml -- HTML
+    │   └── article.wxss -- CSS
+│   ├── code
+│   ├── index
+│   └── person
 ├── project.config.json
 ├── sitemap.json
 └── utils
+    └── util.js
 
-3 directories, 7 files
+8 directories, 8 files
 
