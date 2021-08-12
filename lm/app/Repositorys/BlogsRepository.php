@@ -25,7 +25,7 @@ class BlogsRepository
      */
     public function getBlogs(int $page, int $page_size, array $params = [])
     {
-        $rowObj = BlogsModel::select(['id', 'title', 'intro', 'tags','create_time']);
+        $rowObj = BlogsModel::select(['id', 'title', 'intro', 'tags', 'create_time']);
 
         $orderBy = 'id';
         $sort = 'desc';

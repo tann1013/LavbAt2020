@@ -30,6 +30,9 @@ class Authenticate
         'admin/bill/getList',
         'admin/bill/addTask',
         'admin/bill/getTaskList',
+
+        //扩展微信登录
+        'admin/xcx/blogs',
     ];
 
     /**

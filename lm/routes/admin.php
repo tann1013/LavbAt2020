@@ -81,6 +81,11 @@ $router->post('bill/getList', 'BillController@getList');
 $router->post('bill/addTask', 'BillController@addTask');
 $router->post('bill/getTaskList', 'BillController@getTaskList');
 
-
-
+/**
+ * 扩展-微信小程序博客模块
+ */
+$router->group(['prefix' => 'xcx', 'namespace' => 'Xcx'], function () use ($router) {
+    $router->post('blogs', 'XcxBlogController@blogs');
+});
+//include_once('apiRoutes/vpp.php');
 
